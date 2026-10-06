@@ -226,24 +226,26 @@ var Core = (function () {
     $('gempty').hidden = shown > 0;
   }
 
-  // Etiquetas filtrables de un campeón: roles + especies (Darkin, Yordle) + región
+  // Etiquetas filtrables de un campeón: roles + líneas + especies (Darkin, Yordle) + región
   function tags(c) {
-    return c.roles.concat(c.species || [], c.region || []);
+    return c.roles.concat(c.lanes || [], c.species || [], c.region || []);
   }
 
   function buildRoles() {
     var set = {};
+    var lanes = {};
     var spec = {};
     var regs = {};
     state.all.forEach(function (c) {
       c.roles.forEach(function (r) { set[r] = true; });
+      (c.lanes || []).forEach(function (l) { lanes[l] = true; });
       (c.species || []).forEach(function (s) { spec[s] = true; });
       if (c.region) regs[c.region] = true;
     });
 
     var box = $('roles');
-    // Una línea por grupo: roles, regiones y especies
-    var groups = [[''].concat(Object.keys(set).sort()), Object.keys(regs).sort(), Object.keys(spec).sort()];
+    // Una línea por grupo: roles, líneas, regiones y especies
+    var groups = [[''].concat(Object.keys(set).sort()), Object.keys(lanes).sort(), Object.keys(regs).sort(), Object.keys(spec).sort()];
     var names = [];
     groups.forEach(function (g, i) {
       if (i > 0) names.push(null);

@@ -9,7 +9,10 @@
   "species": [
    "Darkin"
   ],
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "ahri",
@@ -18,7 +21,10 @@
    "Burst"
   ],
   "icon": "Ahri.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "akali",
@@ -27,7 +33,11 @@
    "Assassin"
   ],
   "icon": "Akali.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "akshan",
@@ -37,7 +47,10 @@
    "Assassin"
   ],
   "icon": "Akshan.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "alistar",
@@ -46,7 +59,10 @@
    "Vanguard"
   ],
   "icon": "Alistar.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "ambessa",
@@ -56,7 +72,10 @@
    "Skirmisher"
   ],
   "icon": "Ambessa.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "amumu",
@@ -65,7 +84,11 @@
    "Vanguard"
   ],
   "icon": "Amumu.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Jungle",
+   "Support"
+  ]
  },
  {
   "id": "anivia",
@@ -74,7 +97,10 @@
    "Battlemage"
   ],
   "icon": "Anivia.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "annie",
@@ -83,7 +109,10 @@
    "Burst"
   ],
   "icon": "Annie.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "aphelios",
@@ -92,7 +121,10 @@
    "Marksman"
   ],
   "icon": "Aphelios.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "ashe",
@@ -101,7 +133,11 @@
    "Marksman"
   ],
   "icon": "Ashe.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Bottom",
+   "Support"
+  ]
  },
  {
   "id": "aurelionsol",
@@ -110,7 +146,10 @@
    "Battlemage"
   ],
   "icon": "Aurelion Sol.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "aurora",
@@ -120,7 +159,11 @@
    "Assassin"
   ],
   "icon": "Aurora.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "azir",
@@ -129,7 +172,10 @@
    "Specialist"
   ],
   "icon": "Azir.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "bard",
@@ -137,7 +183,10 @@
   "roles": [
    "Catcher"
   ],
-  "icon": "Bard.webp"
+  "icon": "Bard.webp",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "belveth",
@@ -146,7 +195,10 @@
    "Skirmisher"
   ],
   "icon": "Bel'Veth.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "blitzcrank",
@@ -155,7 +207,10 @@
    "Catcher"
   ],
   "icon": "Blitzcrank.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "brand",
@@ -164,7 +219,12 @@
    "Burst"
   ],
   "icon": "Brand.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle",
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "braum",
@@ -173,7 +233,10 @@
    "Warden"
   ],
   "icon": "Braum.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "briar",
@@ -182,7 +245,10 @@
    "Diver"
   ],
   "icon": "Briar.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "caitlyn",
@@ -191,7 +257,10 @@
    "Marksman"
   ],
   "icon": "Caitlyn.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "camille",
@@ -200,7 +269,11 @@
    "Diver"
   ],
   "icon": "Camille.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "cassiopeia",
@@ -209,7 +282,10 @@
    "Battlemage"
   ],
   "icon": "Cassiopeia.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "chogath",
@@ -218,7 +294,10 @@
    "Specialist"
   ],
   "icon": "Cho'Gath.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "corki",
@@ -230,7 +309,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "darius",
@@ -239,7 +321,10 @@
    "Juggernaut"
   ],
   "icon": "Darius.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "diana",
@@ -249,7 +334,11 @@
    "Diver"
   ],
   "icon": "Diana.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Jungle",
+   "Mid"
+  ]
  },
  {
   "id": "drmundo",
@@ -258,7 +347,10 @@
    "Juggernaut"
   ],
   "icon": "Dr. Mundo.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "draven",
@@ -267,7 +359,10 @@
    "Marksman"
   ],
   "icon": "Draven.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "ekko",
@@ -276,7 +371,11 @@
    "Assassin"
   ],
   "icon": "Ekko.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Jungle",
+   "Mid"
+  ]
  },
  {
   "id": "elise",
@@ -285,7 +384,10 @@
    "Diver"
   ],
   "icon": "Elise.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "evelynn",
@@ -293,7 +395,10 @@
   "roles": [
    "Assassin"
   ],
-  "icon": "Evelynn.webp"
+  "icon": "Evelynn.webp",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "ezreal",
@@ -302,7 +407,10 @@
    "Marksman"
   ],
   "icon": "Ezreal.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "fiddlesticks",
@@ -310,7 +418,10 @@
   "roles": [
    "Specialist"
   ],
-  "icon": "Fiddlesticks.webp"
+  "icon": "Fiddlesticks.webp",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "fiora",
@@ -319,7 +430,10 @@
    "Skirmisher"
   ],
   "icon": "Fiora.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "fizz",
@@ -331,7 +445,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "galio",
@@ -340,7 +457,11 @@
    "Warden"
   ],
   "icon": "Galio.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "gangplank",
@@ -349,7 +470,10 @@
    "Specialist"
   ],
   "icon": "Gangplank.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "garen",
@@ -358,7 +482,10 @@
    "Juggernaut"
   ],
   "icon": "Garen.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "gnar",
@@ -370,7 +497,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "gragas",
@@ -379,7 +509,12 @@
    "Vanguard"
   ],
   "icon": "Gragas.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle",
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "graves",
@@ -388,7 +523,10 @@
    "Specialist"
   ],
   "icon": "Graves.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "gwen",
@@ -397,7 +535,11 @@
    "Skirmisher"
   ],
   "icon": "Gwen.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "hecarim",
@@ -406,7 +548,10 @@
    "Diver"
   ],
   "icon": "Hecarim.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "heimerdinger",
@@ -418,7 +563,12 @@
   "species": [
    "Yordle"
   ],
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Mid",
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "hwei",
@@ -427,7 +577,11 @@
    "Artillery"
   ],
   "icon": "Hwei.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "illaoi",
@@ -436,7 +590,10 @@
    "Juggernaut"
   ],
   "icon": "Illaoi.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "irelia",
@@ -445,7 +602,11 @@
    "Diver"
   ],
   "icon": "Irelia.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "ivern",
@@ -454,7 +615,10 @@
    "Catcher"
   ],
   "icon": "Ivern.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "janna",
@@ -463,7 +627,10 @@
    "Enchanter"
   ],
   "icon": "Janna.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "jarvaniv",
@@ -472,7 +639,10 @@
    "Diver"
   ],
   "icon": "Jarvan IV.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "jax",
@@ -481,7 +651,11 @@
    "Skirmisher"
   ],
   "icon": "Jax.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "jayce",
@@ -490,7 +664,11 @@
    "Artillery"
   ],
   "icon": "Jayce.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "jhin",
@@ -500,7 +678,10 @@
    "Catcher"
   ],
   "icon": "Jhin.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "jinx",
@@ -509,7 +690,10 @@
    "Marksman"
   ],
   "icon": "Jinx.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "ksante",
@@ -519,7 +703,10 @@
    "Skirmisher"
   ],
   "icon": "K'Sante.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "kaisa",
@@ -528,7 +715,10 @@
    "Marksman"
   ],
   "icon": "Kai'Sa.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "kalista",
@@ -537,7 +727,10 @@
    "Marksman"
   ],
   "icon": "Kalista.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "karma",
@@ -547,7 +740,12 @@
    "Enchanter"
   ],
   "icon": "Karma.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid",
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "karthus",
@@ -556,7 +754,10 @@
    "Battlemage"
   ],
   "icon": "Karthus.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "kassadin",
@@ -565,7 +766,10 @@
    "Assassin"
   ],
   "icon": "Kassadin.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "katarina",
@@ -574,7 +778,10 @@
    "Assassin"
   ],
   "icon": "Katarina.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "kayle",
@@ -583,7 +790,10 @@
    "Specialist"
   ],
   "icon": "Kayle.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "kayn",
@@ -595,7 +805,10 @@
   "species": [
    "Darkin"
   ],
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "kennen",
@@ -607,7 +820,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "khazix",
@@ -616,7 +832,10 @@
    "Assassin"
   ],
   "icon": "Kha'Zix.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "kindred",
@@ -624,7 +843,10 @@
   "roles": [
    "Marksman"
   ],
-  "icon": "Kindred.webp"
+  "icon": "Kindred.webp",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "kled",
@@ -636,7 +858,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "kogmaw",
@@ -645,7 +870,10 @@
    "Marksman"
   ],
   "icon": "Kog'Maw.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "leblanc",
@@ -655,7 +883,10 @@
    "Assassin"
   ],
   "icon": "LeBlanc.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "leesin",
@@ -664,7 +895,10 @@
    "Diver"
   ],
   "icon": "Lee Sin.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "leona",
@@ -673,7 +907,10 @@
    "Vanguard"
   ],
   "icon": "Leona.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "lillia",
@@ -682,7 +919,10 @@
    "Skirmisher"
   ],
   "icon": "Lillia.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "lissandra",
@@ -691,7 +931,10 @@
    "Burst"
   ],
   "icon": "Lissandra.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "locke",
@@ -700,7 +943,10 @@
    "Assassin"
   ],
   "icon": "Locke.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "lucian",
@@ -709,7 +955,10 @@
    "Marksman"
   ],
   "icon": "Lucian.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "lulu",
@@ -721,7 +970,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "lux",
@@ -731,7 +983,11 @@
    "Artillery"
   ],
   "icon": "Lux.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "malphite",
@@ -740,7 +996,12 @@
    "Vanguard"
   ],
   "icon": "Malphite.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Mid",
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "malzahar",
@@ -749,7 +1010,10 @@
    "Battlemage"
   ],
   "icon": "Malzahar.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "maokai",
@@ -758,7 +1022,11 @@
    "Vanguard"
   ],
   "icon": "Maokai.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Jungle",
+   "Support"
+  ]
  },
  {
   "id": "masteryi",
@@ -767,7 +1035,10 @@
    "Skirmisher"
   ],
   "icon": "Master Yi.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "mel",
@@ -776,7 +1047,11 @@
    "Artillery"
   ],
   "icon": "Mel.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "milio",
@@ -785,7 +1060,10 @@
    "Enchanter"
   ],
   "icon": "Milio.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "missfortune",
@@ -794,7 +1072,10 @@
    "Marksman"
   ],
   "icon": "Miss Fortune.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "mordekaiser",
@@ -803,7 +1084,10 @@
    "Juggernaut"
   ],
   "icon": "Mordekaiser.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "morgana",
@@ -812,7 +1096,10 @@
    "Catcher"
   ],
   "icon": "Morgana.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "naafiri",
@@ -824,7 +1111,10 @@
   "species": [
    "Darkin"
   ],
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "nami",
@@ -832,7 +1122,10 @@
   "roles": [
    "Enchanter"
   ],
-  "icon": "Nami.webp"
+  "icon": "Nami.webp",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "nasus",
@@ -841,7 +1134,10 @@
    "Juggernaut"
   ],
   "icon": "Nasus.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "nautilus",
@@ -850,7 +1146,10 @@
    "Vanguard"
   ],
   "icon": "Nautilus.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "neeko",
@@ -860,7 +1159,11 @@
    "Catcher"
   ],
   "icon": "Neeko.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "nidalee",
@@ -869,7 +1172,10 @@
    "Specialist"
   ],
   "icon": "Nidalee.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "nilah",
@@ -878,7 +1184,10 @@
    "Skirmisher"
   ],
   "icon": "Nilah.webp",
-  "region": "Kathkan"
+  "region": "Kathkan",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "nocturne",
@@ -886,7 +1195,10 @@
   "roles": [
    "Assassin"
   ],
-  "icon": "Nocturne.webp"
+  "icon": "Nocturne.webp",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "nunuwillump",
@@ -895,7 +1207,10 @@
    "Vanguard"
   ],
   "icon": "Nunu & Willump.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "olaf",
@@ -904,7 +1219,10 @@
    "Diver"
   ],
   "icon": "Olaf.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "orianna",
@@ -913,7 +1231,10 @@
    "Burst"
   ],
   "icon": "Orianna.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "ornn",
@@ -922,7 +1243,10 @@
    "Vanguard"
   ],
   "icon": "Ornn.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "pantheon",
@@ -931,7 +1255,13 @@
    "Diver"
   ],
   "icon": "Pantheon.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Jungle",
+   "Mid",
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "poppy",
@@ -943,7 +1273,11 @@
   "species": [
    "Yordle"
   ],
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "pyke",
@@ -953,7 +1287,10 @@
    "Catcher"
   ],
   "icon": "Pyke.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "qiyana",
@@ -962,7 +1299,10 @@
    "Assassin"
   ],
   "icon": "Qiyana.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "quinn",
@@ -971,7 +1311,10 @@
    "Specialist"
   ],
   "icon": "Quinn.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "rakan",
@@ -980,7 +1323,10 @@
    "Catcher"
   ],
   "icon": "Rakan.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "rammus",
@@ -989,7 +1335,10 @@
    "Vanguard"
   ],
   "icon": "Rammus.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "reksai",
@@ -998,7 +1347,10 @@
    "Diver"
   ],
   "icon": "Rek'Sai.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "rell",
@@ -1007,7 +1359,10 @@
    "Vanguard"
   ],
   "icon": "Rell.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "renataglasc",
@@ -1016,7 +1371,10 @@
    "Enchanter"
   ],
   "icon": "Renata Glasc.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "renekton",
@@ -1025,7 +1383,10 @@
    "Diver"
   ],
   "icon": "Renekton.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "rengar",
@@ -1035,7 +1396,11 @@
    "Diver"
   ],
   "icon": "Rengar.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "riven",
@@ -1044,7 +1409,10 @@
    "Skirmisher"
   ],
   "icon": "Riven.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "rumble",
@@ -1056,7 +1424,11 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "ryze",
@@ -1064,7 +1436,10 @@
   "roles": [
    "Battlemage"
   ],
-  "icon": "Ryze.webp"
+  "icon": "Ryze.webp",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "samira",
@@ -1073,7 +1448,10 @@
    "Marksman"
   ],
   "icon": "Samira.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "sejuani",
@@ -1082,7 +1460,10 @@
    "Vanguard"
   ],
   "icon": "Sejuani.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "senna",
@@ -1092,7 +1473,11 @@
    "Enchanter"
   ],
   "icon": "Senna.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Bottom",
+   "Support"
+  ]
  },
  {
   "id": "seraphine",
@@ -1102,7 +1487,11 @@
    "Enchanter"
   ],
   "icon": "Seraphine.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Bottom",
+   "Support"
+  ]
  },
  {
   "id": "sett",
@@ -1111,7 +1500,10 @@
    "Juggernaut"
   ],
   "icon": "Sett.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "shaco",
@@ -1119,7 +1511,11 @@
   "roles": [
    "Assassin"
   ],
-  "icon": "Shaco.webp"
+  "icon": "Shaco.webp",
+  "lanes": [
+   "Jungle",
+   "Support"
+  ]
  },
  {
   "id": "shen",
@@ -1128,7 +1524,11 @@
    "Warden"
   ],
   "icon": "Shen.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "shyvana",
@@ -1137,7 +1537,10 @@
    "Diver"
   ],
   "icon": "Shyvana.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "singed",
@@ -1146,7 +1549,10 @@
    "Specialist"
   ],
   "icon": "Singed.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "sion",
@@ -1155,7 +1561,10 @@
    "Vanguard"
   ],
   "icon": "Sion.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "sivir",
@@ -1164,7 +1573,10 @@
    "Marksman"
   ],
   "icon": "Sivir.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "skarner",
@@ -1174,7 +1586,11 @@
    "Juggernaut"
   ],
   "icon": "Skarner.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "smolder",
@@ -1183,7 +1599,12 @@
    "Marksman"
   ],
   "icon": "Smolder.webp",
-  "region": "Camavor"
+  "region": "Camavor",
+  "lanes": [
+   "Bottom",
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "sona",
@@ -1192,7 +1613,10 @@
    "Enchanter"
   ],
   "icon": "Sona.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "soraka",
@@ -1201,7 +1625,10 @@
    "Enchanter"
   ],
   "icon": "Soraka.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "swain",
@@ -1210,7 +1637,12 @@
    "Battlemage"
   ],
   "icon": "Swain.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Bottom",
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "sylas",
@@ -1220,7 +1652,11 @@
    "Skirmisher"
   ],
   "icon": "Sylas.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "syndra",
@@ -1229,7 +1665,10 @@
    "Burst"
   ],
   "icon": "Syndra.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "tahmkench",
@@ -1238,7 +1677,11 @@
    "Warden"
   ],
   "icon": "Tahm Kench.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "taliyah",
@@ -1247,7 +1690,11 @@
    "Battlemage"
   ],
   "icon": "Taliyah.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Jungle",
+   "Mid"
+  ]
  },
  {
   "id": "talon",
@@ -1256,7 +1703,10 @@
    "Assassin"
   ],
   "icon": "Talon.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "taric",
@@ -1266,7 +1716,11 @@
    "Warden"
   ],
   "icon": "Taric.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "teemo",
@@ -1278,7 +1732,12 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Jungle",
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "thresh",
@@ -1287,7 +1746,10 @@
    "Catcher"
   ],
   "icon": "Thresh.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "tristana",
@@ -1299,7 +1761,11 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Bottom",
+   "Mid"
+  ]
  },
  {
   "id": "trundle",
@@ -1308,7 +1774,11 @@
    "Juggernaut"
   ],
   "icon": "Trundle.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "tryndamere",
@@ -1317,7 +1787,10 @@
    "Skirmisher"
   ],
   "icon": "Tryndamere.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "twistedfate",
@@ -1326,7 +1799,12 @@
    "Burst"
   ],
   "icon": "Twisted Fate.webp",
-  "region": "Bilgewater"
+  "region": "Bilgewater",
+  "lanes": [
+   "Bottom",
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "twitch",
@@ -1335,7 +1813,11 @@
    "Marksman"
   ],
   "icon": "Twitch.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Bottom",
+   "Support"
+  ]
  },
  {
   "id": "udyr",
@@ -1344,7 +1826,11 @@
    "Juggernaut"
   ],
   "icon": "Udyr.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "urgot",
@@ -1353,7 +1839,10 @@
    "Juggernaut"
   ],
   "icon": "Urgot.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "varus",
@@ -1366,7 +1855,10 @@
   "species": [
    "Darkin"
   ],
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "vayne",
@@ -1375,7 +1867,11 @@
    "Marksman"
   ],
   "icon": "Vayne.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Bottom",
+   "Top"
+  ]
  },
  {
   "id": "veigar",
@@ -1387,7 +1883,11 @@
   "species": [
    "Yordle"
   ],
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "velkoz",
@@ -1396,7 +1896,11 @@
    "Artillery"
   ],
   "icon": "Vel'Koz.webp",
-  "region": "The Void"
+  "region": "The Void",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "vex",
@@ -1408,7 +1912,10 @@
   "species": [
    "Yordle"
   ],
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "vi",
@@ -1417,7 +1924,10 @@
    "Diver"
   ],
   "icon": "Vi.webp",
-  "region": "Piltover"
+  "region": "Piltover",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "viego",
@@ -1426,7 +1936,10 @@
    "Skirmisher"
   ],
   "icon": "Viego.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "viktor",
@@ -1435,7 +1948,10 @@
    "Battlemage"
   ],
   "icon": "Viktor.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "vladimir",
@@ -1444,7 +1960,11 @@
    "Battlemage"
   ],
   "icon": "Vladimir.webp",
-  "region": "Noxus"
+  "region": "Noxus",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "volibear",
@@ -1453,7 +1973,11 @@
    "Juggernaut"
   ],
   "icon": "Volibear.webp",
-  "region": "Freljord"
+  "region": "Freljord",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "warwick",
@@ -1462,7 +1986,11 @@
    "Diver"
   ],
   "icon": "Warwick.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "wukong",
@@ -1471,7 +1999,11 @@
    "Diver"
   ],
   "icon": "Wukong.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle",
+   "Top"
+  ]
  },
  {
   "id": "xayah",
@@ -1480,7 +2012,10 @@
    "Marksman"
   ],
   "icon": "Xayah.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "xerath",
@@ -1489,7 +2024,11 @@
    "Artillery"
   ],
   "icon": "Xerath.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Mid",
+   "Support"
+  ]
  },
  {
   "id": "xinzhao",
@@ -1498,7 +2037,10 @@
    "Diver"
   ],
   "icon": "Xin Zhao.webp",
-  "region": "Demacia"
+  "region": "Demacia",
+  "lanes": [
+   "Jungle"
+  ]
  },
  {
   "id": "yasuo",
@@ -1507,7 +2049,12 @@
    "Skirmisher"
   ],
   "icon": "Yasuo.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Bottom",
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "yone",
@@ -1517,7 +2064,11 @@
    "Skirmisher"
   ],
   "icon": "Yone.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Mid",
+   "Top"
+  ]
  },
  {
   "id": "yorick",
@@ -1526,7 +2077,10 @@
    "Juggernaut"
   ],
   "icon": "Yorick.webp",
-  "region": "Shadow Isles"
+  "region": "Shadow Isles",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "yunara",
@@ -1535,7 +2089,10 @@
    "Marksman"
   ],
   "icon": "Yunara.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "yuumi",
@@ -1544,7 +2101,10 @@
    "Enchanter"
   ],
   "icon": "Yuumi.webp",
-  "region": "Bandle City"
+  "region": "Bandle City",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "zaahen",
@@ -1556,7 +2116,10 @@
   "species": [
    "Darkin"
   ],
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Top"
+  ]
  },
  {
   "id": "zac",
@@ -1565,7 +2128,12 @@
    "Vanguard"
   ],
   "icon": "Zac.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Jungle",
+   "Support",
+   "Top"
+  ]
  },
  {
   "id": "zed",
@@ -1574,7 +2142,11 @@
    "Assassin"
   ],
   "icon": "Zed.webp",
-  "region": "Ionia"
+  "region": "Ionia",
+  "lanes": [
+   "Jungle",
+   "Mid"
+  ]
  },
  {
   "id": "zeri",
@@ -1583,7 +2155,10 @@
    "Marksman"
   ],
   "icon": "Zeri.webp",
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Bottom"
+  ]
  },
  {
   "id": "ziggs",
@@ -1595,7 +2170,11 @@
   "species": [
    "Yordle"
   ],
-  "region": "Zaun"
+  "region": "Zaun",
+  "lanes": [
+   "Bottom",
+   "Mid"
+  ]
  },
  {
   "id": "zilean",
@@ -1604,7 +2183,10 @@
    "Specialist"
   ],
   "icon": "Zilean.webp",
-  "region": "Shurima"
+  "region": "Shurima",
+  "lanes": [
+   "Support"
+  ]
  },
  {
   "id": "zoe",
@@ -1613,7 +2195,10 @@
    "Burst"
   ],
   "icon": "Zoe.webp",
-  "region": "Targon"
+  "region": "Targon",
+  "lanes": [
+   "Mid"
+  ]
  },
  {
   "id": "zyra",
@@ -1622,6 +2207,9 @@
    "Catcher"
   ],
   "icon": "Zyra.webp",
-  "region": "Ixtal"
+  "region": "Ixtal",
+  "lanes": [
+   "Support"
+  ]
  }
 ]

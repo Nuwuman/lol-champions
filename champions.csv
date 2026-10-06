@@ -73,7 +73,7 @@ Lee Sin,Ionia,Diver,Jungle,icons/Lee Sin.webp,Lee Sin.webp
 Leona,Targon,Vanguard,Support,icons/Leona.webp,Leona.webp
 Lillia,Ionia,Skirmisher,Jungle,icons/Lillia.webp,Lillia.webp
 Lissandra,Freljord,Burst,Mid,icons/Lissandra.webp,Lissandra.webp
-Locke,Demacia,Assassin,,icons/Locke.webp,Locke.webp
+Locke,Demacia,Assassin,Mid,icons/Locke.webp,Locke.webp
 Lucian,Demacia,Marksman,Bottom,icons/Lucian.webp,Lucian.webp
 Lulu,Bandle city,Enchanter,Support,icons/Lulu.webp,Lulu.webp
 Lux,Demacia,"Burst, Artillery","Mid, Support",icons/Lux.webp,Lux.webp
@@ -164,7 +164,7 @@ Yone,Ionia,"Assassin, Skirmisher","Mid, Top",icons/Yone.webp,Yone.webp
 Yorick,Shadow isles,Juggernaut,Top,icons/Yorick.webp,Yorick.webp
 Yunara,Ionia,Marksman,Bottom,icons/Yunara.webp,Yunara.webp
 Yuumi,Bandle city,Enchanter,Support,icons/Yuumi.webp,Yuumi.webp
-Zaahen,Shurima,Skirmisher,,icons/Zaahen.webp,Zaahen.webp
+Zaahen,Shurima,Skirmisher,Top,icons/Zaahen.webp,Zaahen.webp
 Zac,Zaun,Vanguard,"Jungle, Support, Top",icons/Zac.webp,Zac.webp
 Zed,Ionia,Assassin,"Jungle, Mid",icons/Zed.webp,Zed.webp
 Zeri,Zaun,Marksman,Bottom,icons/Zeri.webp,Zeri.webp
