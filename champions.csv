@@ -1,0 +1,174 @@
+Champion,Region,Role(s),Icon,IconFile
+Aatrox,Shurima,Juggernaut,icons/Aatrox.webp,Aatrox.webp
+Ahri,Ionia,Burst,icons/Ahri.webp,Ahri.webp
+Akali,Ionia,Assassin,icons/Akali.webp,Akali.webp
+Akshan,Shurima,"Marksman, Assassin",icons/Akshan.webp,Akshan.webp
+Alistar,Noxus,Vanguard,icons/Alistar.webp,Alistar.webp
+Ambessa,Noxus,"Diver, Skirmisher",icons/Ambessa.webp,Ambessa.webp
+Amumu,Shurima,Vanguard,icons/Amumu.webp,Amumu.webp
+Anivia,Freljord,Battlemage,icons/Anivia.webp,Anivia.webp
+Annie,Noxus,Burst,icons/Annie.webp,Annie.webp
+Aphelios,Targon,Marksman,icons/Aphelios.webp,Aphelios.webp
+Ashe,Freljord,Marksman,icons/Ashe.webp,Ashe.webp
+Aurelion Sol,Targon,Battlemage,icons/Aurelion Sol.webp,Aurelion Sol.webp
+Aurora,Freljord,"Burst, Assassin",icons/Aurora.webp,Aurora.webp
+Azir,Shurima,Specialist,icons/Azir.webp,Azir.webp
+Bard,desconocido,Catcher,icons/Bard.webp,Bard.webp
+Bel'Veth,The void,Skirmisher,icons/Bel'Veth.webp,Bel'Veth.webp
+Blitzcrank,Zaun,Catcher,icons/Blitzcrank.webp,Blitzcrank.webp
+Brand,Freljord,Burst,icons/Brand.webp,Brand.webp
+Braum,Freljord,Warden,icons/Braum.webp,Braum.webp
+Briar,Noxus,Diver,icons/Briar.webp,Briar.webp
+Caitlyn,Piltover,Marksman,icons/Caitlyn.webp,Caitlyn.webp
+Camille,Piltover,Diver,icons/Camille.webp,Camille.webp
+Cassiopeia,Noxus,Battlemage,icons/Cassiopeia.webp,Cassiopeia.webp
+Cho'Gath,The void,Specialist,icons/Cho'Gath.webp,Cho'Gath.webp
+Corki,Bandle city,Marksman,icons/Corki.webp,Corki.webp
+Darius,Noxus,Juggernaut,icons/Darius.webp,Darius.webp
+Diana,Targon,"Assassin, Diver",icons/Diana.webp,Diana.webp
+Dr. Mundo,Zaun,Juggernaut,icons/Dr. Mundo.webp,Dr. Mundo.webp
+Draven,Noxus,Marksman,icons/Draven.webp,Draven.webp
+Ekko,Zaun,Assassin,icons/Ekko.webp,Ekko.webp
+Elise,Shadow isles,Diver,icons/Elise.webp,Elise.webp
+Evelynn,desconocido,Assassin,icons/Evelynn.webp,Evelynn.webp
+Ezreal,Piltover,Marksman,icons/Ezreal.webp,Ezreal.webp
+Fiddlesticks,desconocido,Specialist,icons/Fiddlesticks.webp,Fiddlesticks.webp
+Fiora,Demacia,Skirmisher,icons/Fiora.webp,Fiora.webp
+Fizz,Bilgewater,Assassin,icons/Fizz.webp,Fizz.webp
+Galio,Demacia,Warden,icons/Galio.webp,Galio.webp
+Gangplank,Bilgewater,Specialist,icons/Gangplank.webp,Gangplank.webp
+Garen,Demacia,Juggernaut,icons/Garen.webp,Garen.webp
+Gnar,Freljord,Specialist,icons/Gnar.webp,Gnar.webp
+Gragas,Freljord,Vanguard,icons/Gragas.webp,Gragas.webp
+Graves,Bilgewater,Specialist,icons/Graves.webp,Graves.webp
+Gwen,Shadow isles,Skirmisher,icons/Gwen.webp,Gwen.webp
+Hecarim,Shadow isles,Diver,icons/Hecarim.webp,Hecarim.webp
+Heimerdinger,Piltover,Specialist,icons/Heimerdinger.webp,Heimerdinger.webp
+Hwei,Ionia,Artillery,icons/Hwei.webp,Hwei.webp
+Illaoi,Bilgewater,Juggernaut,icons/Illaoi.webp,Illaoi.webp
+Irelia,Ionia,Diver,icons/Irelia.webp,Irelia.webp
+Ivern,Ionia,Catcher,icons/Ivern.webp,Ivern.webp
+Janna,Zaun,Enchanter,icons/Janna.webp,Janna.webp
+Jarvan IV,Demacia,Diver,icons/Jarvan IV.webp,Jarvan IV.webp
+Jax,Shurima,Skirmisher,icons/Jax.webp,Jax.webp
+Jayce,Piltover,Artillery,icons/Jayce.webp,Jayce.webp
+Jhin,Ionia,"Marksman, Catcher",icons/Jhin.webp,Jhin.webp
+Jinx,Zaun,Marksman,icons/Jinx.webp,Jinx.webp
+K'Sante,Shurima,"Warden, Skirmisher",icons/K'Sante.webp,K'Sante.webp
+Kai'Sa,The void,Marksman,icons/Kai'Sa.webp,Kai'Sa.webp
+Kalista,Shadow isles,Marksman,icons/Kalista.webp,Kalista.webp
+Karma,Ionia,"Burst, Enchanter",icons/Karma.webp,Karma.webp
+Karthus,Shadow isles,Battlemage,icons/Karthus.webp,Karthus.webp
+Kassadin,The void,Assassin,icons/Kassadin.webp,Kassadin.webp
+Katarina,Noxus,Assassin,icons/Katarina.webp,Katarina.webp
+Kayle,Demacia,Specialist,icons/Kayle.webp,Kayle.webp
+Kayn,Ionia,Skirmisher,icons/Kayn.webp,Kayn.webp
+Kennen,Ionia,Specialist,icons/Kennen.webp,Kennen.webp
+Kha'Zix,The void,Assassin,icons/Kha'Zix.webp,Kha'Zix.webp
+Kindred,desconocido,Marksman,icons/Kindred.webp,Kindred.webp
+Kled,Noxus,Skirmisher,icons/Kled.webp,Kled.webp
+Kog'Maw,The void,Marksman,icons/Kog'Maw.webp,Kog'Maw.webp
+LeBlanc,Noxus,"Burst, Assassin",icons/LeBlanc.webp,LeBlanc.webp
+Lee Sin,Ionia,Diver,icons/Lee Sin.webp,Lee Sin.webp
+Leona,Targon,Vanguard,icons/Leona.webp,Leona.webp
+Lillia,Ionia,Skirmisher,icons/Lillia.webp,Lillia.webp
+Lissandra,Freljord,Burst,icons/Lissandra.webp,Lissandra.webp
+Locke,Demacia,Assassin,icons/Locke.webp,Locke.webp
+Lucian,Demacia,Marksman,icons/Lucian.webp,Lucian.webp
+Lulu,Bandle city,Enchanter,icons/Lulu.webp,Lulu.webp
+Lux,Demacia,"Burst, Artillery",icons/Lux.webp,Lux.webp
+Malphite,Ixtal,Vanguard,icons/Malphite.webp,Malphite.webp
+Malzahar,The void,Battlemage,icons/Malzahar.webp,Malzahar.webp
+Maokai,Shadow isles,Vanguard,icons/Maokai.webp,Maokai.webp
+Master Yi,Ionia,Skirmisher,icons/Master Yi.webp,Master Yi.webp
+Mel,Noxus,Artillery,icons/Mel.webp,Mel.webp
+Milio,Ixtal,Enchanter,icons/Milio.webp,Milio.webp
+Miss Fortune,Bilgewater,Marksman,icons/Miss Fortune.webp,Miss Fortune.webp
+Mordekaiser,Noxus,Juggernaut,icons/Mordekaiser.webp,Mordekaiser.webp
+Morgana,Demacia,Catcher,icons/Morgana.webp,Morgana.webp
+Naafiri,Shurima,Assassin,icons/Naafiri.webp,Naafiri.webp
+Nami,desconocido,Enchanter,icons/Nami.webp,Nami.webp
+Nasus,Shurima,Juggernaut,icons/Nasus.webp,Nasus.webp
+Nautilus,Bilgewater,Vanguard,icons/Nautilus.webp,Nautilus.webp
+Neeko,Ixtal,"Burst, Catcher",icons/Neeko.webp,Neeko.webp
+Nidalee,Ixtal,Specialist,icons/Nidalee.webp,Nidalee.webp
+Nilah,Kathkan,Skirmisher,icons/Nilah.webp,Nilah.webp
+Nocturne,desconocido,Assassin,icons/Nocturne.webp,Nocturne.webp
+Nunu & Willump,Freljord,Vanguard,icons/Nunu & Willump.webp,Nunu & Willump.webp
+Olaf,Freljord,Diver,icons/Olaf.webp,Olaf.webp
+Orianna,Piltover,Burst,icons/Orianna.webp,Orianna.webp
+Ornn,Freljord,Vanguard,icons/Ornn.webp,Ornn.webp
+Pantheon,Targon,Diver,icons/Pantheon.webp,Pantheon.webp
+Poppy,Demacia,Warden,icons/Poppy.webp,Poppy.webp
+Pyke,Bilgewater,"Assassin, Catcher",icons/Pyke.webp,Pyke.webp
+Qiyana,Ixtal,Assassin,icons/Qiyana.webp,Qiyana.webp
+Quinn,Demacia,Specialist,icons/Quinn.webp,Quinn.webp
+Rakan,Ionia,Catcher,icons/Rakan.webp,Rakan.webp
+Rammus,Shurima,Vanguard,icons/Rammus.webp,Rammus.webp
+Rek'Sai,The void,Diver,icons/Rek'Sai.webp,Rek'Sai.webp
+Rell,Noxus,Vanguard,icons/Rell.webp,Rell.webp
+Renata Glasc,Zaun,Enchanter,icons/Renata Glasc.webp,Renata Glasc.webp
+Renekton,Shurima,Diver,icons/Renekton.webp,Renekton.webp
+Rengar,Ixtal,"Assassin, Diver",icons/Rengar.webp,Rengar.webp
+Riven,Noxus,Skirmisher,icons/Riven.webp,Riven.webp
+Rumble,Bandle city,Battlemage,icons/Rumble.webp,Rumble.webp
+Ryze,desconocido,Battlemage,icons/Ryze.webp,Ryze.webp
+Samira,Noxus,Marksman,icons/Samira.webp,Samira.webp
+Sejuani,Freljord,Vanguard,icons/Sejuani.webp,Sejuani.webp
+Senna,Demacia,"Marksman, Enchanter",icons/Senna.webp,Senna.webp
+Seraphine,Piltover,"Burst, Enchanter",icons/Seraphine.webp,Seraphine.webp
+Sett,Ionia,Juggernaut,icons/Sett.webp,Sett.webp
+Shaco,desconocido,Assassin,icons/Shaco.webp,Shaco.webp
+Shen,Ionia,Warden,icons/Shen.webp,Shen.webp
+Shyvana,Demacia,Diver,icons/Shyvana.webp,Shyvana.webp
+Singed,Zaun,Specialist,icons/Singed.webp,Singed.webp
+Sion,Noxus,Vanguard,icons/Sion.webp,Sion.webp
+Sivir,Shurima,Marksman,icons/Sivir.webp,Sivir.webp
+Skarner,Ixtal,"Vanguard, Juggernaut",icons/Skarner.webp,Skarner.webp
+Smolder,Camavor,Marksman,icons/Smolder.webp,Smolder.webp
+Sona,Demacia,Enchanter,icons/Sona.webp,Sona.webp
+Soraka,Targon,Enchanter,icons/Soraka.webp,Soraka.webp
+Swain,Noxus,Battlemage,icons/Swain.webp,Swain.webp
+Sylas,Demacia,"Burst, Skirmisher",icons/Sylas.webp,Sylas.webp
+Syndra,Ionia,Burst,icons/Syndra.webp,Syndra.webp
+Tahm Kench,Bilgewater,Warden,icons/Tahm Kench.webp,Tahm Kench.webp
+Taliyah,Shurima,Battlemage,icons/Taliyah.webp,Taliyah.webp
+Talon,Noxus,Assassin,icons/Talon.webp,Talon.webp
+Taric,Targon,"Enchanter, Warden",icons/Taric.webp,Taric.webp
+Teemo,Bandle city,Specialist,icons/Teemo.webp,Teemo.webp
+Thresh,Shadow isles,Catcher,icons/Thresh.webp,Thresh.webp
+Tristana,Bandle city,Marksman,icons/Tristana.webp,Tristana.webp
+Trundle,Freljord,Juggernaut,icons/Trundle.webp,Trundle.webp
+Tryndamere,Freljord,Skirmisher,icons/Tryndamere.webp,Tryndamere.webp
+Twisted Fate,Bilgewater,Burst,icons/Twisted Fate.webp,Twisted Fate.webp
+Twitch,Zaun,Marksman,icons/Twitch.webp,Twitch.webp
+Udyr,Freljord,Juggernaut,icons/Udyr.webp,Udyr.webp
+Urgot,Zaun,Juggernaut,icons/Urgot.webp,Urgot.webp
+Varus,Ionia,"Marksman, Artillery",icons/Varus.webp,Varus.webp
+Vayne,Demacia,Marksman,icons/Vayne.webp,Vayne.webp
+Veigar,Bandle city,Burst,icons/Veigar.webp,Veigar.webp
+Vel'Koz,The void,Artillery,icons/Vel'Koz.webp,Vel'Koz.webp
+Vex,Shadow isles,Burst,icons/Vex.webp,Vex.webp
+Vi,Piltover,Diver,icons/Vi.webp,Vi.webp
+Viego,Shadow isles,Skirmisher,icons/Viego.webp,Viego.webp
+Viktor,Zaun,Battlemage,icons/Viktor.webp,Viktor.webp
+Vladimir,Noxus,Battlemage,icons/Vladimir.webp,Vladimir.webp
+Volibear,Freljord,Juggernaut,icons/Volibear.webp,Volibear.webp
+Warwick,Zaun,Diver,icons/Warwick.webp,Warwick.webp
+Wukong,Ionia,Diver,icons/Wukong.webp,Wukong.webp
+Xayah,Ionia,Marksman,icons/Xayah.webp,Xayah.webp
+Xerath,Shurima,Artillery,icons/Xerath.webp,Xerath.webp
+Xin Zhao,Demacia,Diver,icons/Xin Zhao.webp,Xin Zhao.webp
+Yasuo,Ionia,Skirmisher,icons/Yasuo.webp,Yasuo.webp
+Yone,Ionia,"Assassin, Skirmisher",icons/Yone.webp,Yone.webp
+Yorick,Shadow isles,Juggernaut,icons/Yorick.webp,Yorick.webp
+Yunara,Ionia,Marksman,icons/Yunara.webp,Yunara.webp
+Yuumi,Bandle city,Enchanter,icons/Yuumi.webp,Yuumi.webp
+Zaahen,Shurima,Skirmisher,icons/Zaahen.webp,Zaahen.webp
+Zac,Zaun,Vanguard,icons/Zac.webp,Zac.webp
+Zed,Ionia,Assassin,icons/Zed.webp,Zed.webp
+Zeri,Zaun,Marksman,icons/Zeri.webp,Zeri.webp
+Ziggs,Zaun,Artillery,icons/Ziggs.webp,Ziggs.webp
+Zilean,Shurima,Specialist,icons/Zilean.webp,Zilean.webp
+Zoe,Targon,Burst,icons/Zoe.webp,Zoe.webp
+Zyra,Ixtal,Catcher,icons/Zyra.webp,Zyra.webp

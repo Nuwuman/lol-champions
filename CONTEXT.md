@@ -21,8 +21,10 @@ styles.css            tokens CSS (--bg, --card, --text, --muted, --accent, --lin
 core.js               objeto global `Core`: estado, datos, selección, localStorage, utilidades, pestañas
 games.js              un IIFE por juego; registra cada uno con Core.registerGame
 data/champions.json   173 campeones: { id, name, roles[], icon }   (id = slug "kaisa"; icon = nombre de archivo)
-data/champions.csv    fuente original (no se usa en tiempo de ejecución)
 img/champions/        173 íconos .webp 128×128, nombre = campo `icon` (p. ej. "Kai'Sa.webp")
+champions.csv        dataset original (raíz): Champion, Region, Role(s), Icon, IconFile. NO se usa en ejecución;
+                      tiene `Region`, que champions.json aún no incluye. También darkins.csv y yordles.csv (listas por especie)
+icons/                íconos originales del dataset (idénticos a img/champions/; duplicado)
 ```
 Rutas de imagen: `Core.iconSrc(champ)` aplica `encodeURIComponent` (hay nombres con `'`, `&`, espacios y `.`).
 
@@ -51,6 +53,7 @@ Rutas de imagen: `Core.iconSrc(champ)` aplica `encodeURIComponent` (hay nombres 
 - **Batalla** (esferas que pelean; idea: usar los roles de LoL como clases) y **Blackjack**: no están en esta versión; su código original está en la carpeta local `paginaDesicionesOG` (fuera del repo). Usarían `max` + `name` como los demás.
 - Íconos dentro de Carrete, Ruleta y Tragaperras (hoy solo texto).
 - Roles en español (el CSV los trae en inglés).
+- Filtros por **región** y por especie (darkin, yordle): los datos ya existen en `champions.csv`, `darkins.csv` y `yordles.csv`; habría que añadir `region` a `champions.json`.
 - Listas con nombre guardadas en `localStorage`, y selección compartible por enlace (`#jinx,teemo`): propuestas, no implementadas.
 
 ## Decisiones ya tomadas (no reabrir sin motivo)
