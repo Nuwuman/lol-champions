@@ -247,7 +247,7 @@ var Core = (function () {
     // Una línea por grupo: roles, líneas, regiones y especies
     var groups = [
       ['Rol', [''].concat(Object.keys(set).sort())],
-      ['Línea', Object.keys(lanes).sort()],
+      ['Línea', ['Top', 'Mid', 'Jungle', 'Support', 'Bottom'].filter(function (l) { return lanes[l]; })],
       ['Región', Object.keys(regs).sort()],
       ['Especie', Object.keys(spec).sort()]
     ];
