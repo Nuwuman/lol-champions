@@ -367,7 +367,7 @@ var Core = (function () {
   function confetti() {
     var c = $('cf');
     var x = c.getContext('2d');
-    var cs = ['#ff7a4d', '#ffd166', '#06d6a0', '#4cc9f0', '#f72585'];
+    var cs = ['#c89b3c', '#f0e6d2', '#0ac8b9', '#0397ab', '#c8aa6e'];
     var ps = [];
     var f = 0;
 

@@ -1,10 +1,10 @@
 :root {
-  --bg: #f6f4ef;
-  --card: #fff;
-  --text: #1d1b18;
-  --muted: #7a756c;
-  --accent: #e4572e;
-  --line: #e3ded3;
+  --bg: #f0e6d2;
+  --card: #fbf7ee;
+  --text: #010a13;
+  --muted: #5b5a56;
+  --accent: #785a28;
+  --line: #cdbe91;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -12,22 +12,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #16150f;
-    --card: #211f18;
-    --text: #f2eee4;
-    --muted: #9b958a;
-    --accent: #ff7a4d;
-    --line: #37332a;
+    --bg: #010a13;
+    --card: #091428;
+    --text: #f0e6d2;
+    --muted: #a09b8c;
+    --accent: #c89b3c;
+    --line: #463714;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #16150f;
-  --card: #211f18;
-  --text: #f2eee4;
-  --muted: #9b958a;
-  --accent: #ff7a4d;
-  --line: #37332a;
+  --bg: #010a13;
+  --card: #091428;
+  --text: #f0e6d2;
+  --muted: #a09b8c;
+  --accent: #c89b3c;
+  --line: #463714;
 }
 
 html {
@@ -60,7 +60,7 @@ main {
 h1 {
   font-size: 2rem;
   margin: 4px 0;
-  background: linear-gradient(90deg, var(--accent), #f7b733, #06d6a0);
+  background: linear-gradient(90deg, var(--accent), #f0e6d2, #0ac8b9);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -107,7 +107,7 @@ p.sub {
 
 .tab.on {
   background: var(--accent);
-  color: #fff;
+  color: #010a13;
   border-color: var(--accent);
 }
 
@@ -118,7 +118,7 @@ button.go {
   border: 0;
   border-radius: 12px;
   background: var(--accent);
-  color: #fff;
+  color: #010a13;
   font: inherit;
   font-size: 1.1rem;
   font-weight: 700;
@@ -233,7 +233,7 @@ canvas.g {
 }
 
 .reel.win {
-  box-shadow: 0 0 0 3px #f7b733, 0 0 44px #f7b733;
+  box-shadow: 0 0 0 3px #c8aa6e, 0 0 44px #c8aa6e;
 }
 
 .reel.win .mid {
@@ -249,8 +249,8 @@ canvas.g {
 
 /* ---------- Tragaperras ---------- */
 .sm {
-  background: linear-gradient(#2b2b3a, #14141d);
-  border: 4px solid #f7b733;
+  background: linear-gradient(#091428, #010a13);
+  border: 4px solid #c8aa6e;
   border-radius: 18px;
   padding: 12px;
   position: relative;
@@ -261,7 +261,7 @@ canvas.g {
   margin: 0 0 8px;
   text-align: center;
   letter-spacing: .25em;
-  color: #f7b733;
+  color: #c8aa6e;
   font-size: 1rem;
 }
 
@@ -276,7 +276,7 @@ canvas.g {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #f7b733;
+  background: #c8aa6e;
   animation: bl 1s infinite;
 }
 
@@ -324,9 +324,9 @@ canvas.g {
 .rw div:nth-child(2) {
   color: #111;
   font-size: .9rem;
-  border-top: 2px solid #e4572e;
-  border-bottom: 2px solid #e4572e;
-  background: #fff7e0;
+  border-top: 2px solid #c89b3c;
+  border-bottom: 2px solid #c89b3c;
+  background: #f0e6d2;
 }
 
 .rw.tk div {
@@ -334,7 +334,7 @@ canvas.g {
 }
 
 .rw.win {
-  box-shadow: 0 0 18px #f7b733, 0 0 0 2px #f7b733;
+  box-shadow: 0 0 18px #c8aa6e, 0 0 0 2px #c8aa6e;
 }
 
 .rw.win div:nth-child(2) {
@@ -361,7 +361,7 @@ canvas.g {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #d62839;
+  background: #be1e37;
 }
 
 .lever.pull {
@@ -415,7 +415,7 @@ canvas.g {
 .role.on {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: #010a13;
 }
 
 .bar {
@@ -509,7 +509,7 @@ canvas.g {
 
 .tile.on {
   border-color: var(--accent);
-  background: rgba(228, 87, 46, .14);
+  background: rgba(200, 155, 60, .14);
 }
 
 .tile.on::after {
@@ -521,7 +521,7 @@ canvas.g {
   height: 18px;
   border-radius: 50%;
   background: var(--accent);
-  color: #fff;
+  color: #010a13;
   font-size: .7rem;
   font-weight: 700;
   line-height: 18px;
@@ -569,8 +569,8 @@ canvas.g {
   margin: 14px 0 0;
   padding: 10px 12px;
   border-radius: 10px;
-  border: 1px solid #f7b733;
-  background: rgba(247, 183, 51, .14);
+  border: 1px solid #c8aa6e;
+  background: rgba(200, 170, 110, .14);
   font-size: .85rem;
   text-align: center;
 }
@@ -611,8 +611,8 @@ canvas.g {
 }
 
 .ln.win {
-  background: rgba(247, 183, 51, .22);
-  outline: 2px solid #f7b733;
+  background: rgba(200, 170, 110, .22);
+  outline: 2px solid #c8aa6e;
 }
 
 /* ---------- Cartas ---------- */
@@ -652,7 +652,7 @@ canvas.g {
 }
 
 .kb {
-  background: repeating-linear-gradient(45deg, var(--accent) 0 6px, #f7b733 6px 12px);
+  background: repeating-linear-gradient(45deg, var(--accent) 0 6px, #c8aa6e 6px 12px);
   border: 3px solid #fff;
 }
 
@@ -684,8 +684,8 @@ canvas.g {
 }
 
 .kc.win .kf {
-  box-shadow: 0 0 22px #f7b733;
-  border-color: #f7b733;
+  box-shadow: 0 0 22px #c8aa6e;
+  border-color: #c8aa6e;
 }
 
 .kc.dim {
