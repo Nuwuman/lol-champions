@@ -395,6 +395,11 @@ canvas.g {
   padding: 10px 0 4px;
 }
 
+.rbreak {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .role {
   flex: none;
   border: 1px solid var(--line);

@@ -242,9 +242,21 @@ var Core = (function () {
     });
 
     var box = $('roles');
-    var names = [''].concat(Object.keys(set).sort(), Object.keys(spec).sort(), Object.keys(regs).sort());
+    // Una línea por grupo: roles, regiones y especies
+    var groups = [[''].concat(Object.keys(set).sort()), Object.keys(regs).sort(), Object.keys(spec).sort()];
+    var names = [];
+    groups.forEach(function (g, i) {
+      if (i > 0) names.push(null);
+      names = names.concat(g);
+    });
 
     names.forEach(function (r) {
+      if (r === null) {
+        var br = document.createElement('span');
+        br.className = 'rbreak';
+        box.appendChild(br);
+        return;
+      }
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'role' + (r === '' ? ' on' : '');
