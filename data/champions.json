@@ -5,7 +5,10 @@
   "roles": [
    "Juggernaut"
   ],
-  "icon": "Aatrox.webp"
+  "icon": "Aatrox.webp",
+  "species": [
+   "Darkin"
+  ]
  },
  {
   "id": "ahri",
@@ -200,7 +203,10 @@
   "roles": [
    "Marksman"
   ],
-  "icon": "Corki.webp"
+  "icon": "Corki.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "darius",
@@ -289,7 +295,10 @@
   "roles": [
    "Assassin"
   ],
-  "icon": "Fizz.webp"
+  "icon": "Fizz.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "galio",
@@ -321,7 +330,10 @@
   "roles": [
    "Specialist"
   ],
-  "icon": "Gnar.webp"
+  "icon": "Gnar.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "gragas",
@@ -361,7 +373,10 @@
   "roles": [
    "Specialist"
   ],
-  "icon": "Heimerdinger.webp"
+  "icon": "Heimerdinger.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "hwei",
@@ -516,7 +531,10 @@
   "roles": [
    "Skirmisher"
   ],
-  "icon": "Kayn.webp"
+  "icon": "Kayn.webp",
+  "species": [
+   "Darkin"
+  ]
  },
  {
   "id": "kennen",
@@ -524,7 +542,10 @@
   "roles": [
    "Specialist"
   ],
-  "icon": "Kennen.webp"
+  "icon": "Kennen.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "khazix",
@@ -548,7 +569,10 @@
   "roles": [
    "Skirmisher"
   ],
-  "icon": "Kled.webp"
+  "icon": "Kled.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "kogmaw",
@@ -621,7 +645,10 @@
   "roles": [
    "Enchanter"
   ],
-  "icon": "Lulu.webp"
+  "icon": "Lulu.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "lux",
@@ -710,7 +737,10 @@
   "roles": [
    "Assassin"
   ],
-  "icon": "Naafiri.webp"
+  "icon": "Naafiri.webp",
+  "species": [
+   "Darkin"
+  ]
  },
  {
   "id": "nami",
@@ -815,7 +845,10 @@
   "roles": [
    "Warden"
   ],
-  "icon": "Poppy.webp"
+  "icon": "Poppy.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "pyke",
@@ -913,7 +946,10 @@
   "roles": [
    "Battlemage"
   ],
-  "icon": "Rumble.webp"
+  "icon": "Rumble.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "ryze",
@@ -1110,7 +1146,10 @@
   "roles": [
    "Specialist"
   ],
-  "icon": "Teemo.webp"
+  "icon": "Teemo.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "thresh",
@@ -1126,7 +1165,10 @@
   "roles": [
    "Marksman"
   ],
-  "icon": "Tristana.webp"
+  "icon": "Tristana.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "trundle",
@@ -1183,7 +1225,10 @@
    "Marksman",
    "Artillery"
   ],
-  "icon": "Varus.webp"
+  "icon": "Varus.webp",
+  "species": [
+   "Darkin"
+  ]
  },
  {
   "id": "vayne",
@@ -1199,7 +1244,10 @@
   "roles": [
    "Burst"
   ],
-  "icon": "Veigar.webp"
+  "icon": "Veigar.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "velkoz",
@@ -1215,7 +1263,10 @@
   "roles": [
    "Burst"
   ],
-  "icon": "Vex.webp"
+  "icon": "Vex.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "vi",
@@ -1344,7 +1395,10 @@
   "roles": [
    "Skirmisher"
   ],
-  "icon": "Zaahen.webp"
+  "icon": "Zaahen.webp",
+  "species": [
+   "Darkin"
+  ]
  },
  {
   "id": "zac",
@@ -1376,7 +1430,10 @@
   "roles": [
    "Artillery"
   ],
-  "icon": "Ziggs.webp"
+  "icon": "Ziggs.webp",
+  "species": [
+   "Yordle"
+  ]
  },
  {
   "id": "zilean",

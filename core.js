@@ -216,7 +216,7 @@ var Core = (function () {
     var shown = 0;
 
     state.all.forEach(function (c) {
-      var okRole = !state.role || c.roles.indexOf(state.role) !== -1;
+      var okRole = !state.role || tags(c).indexOf(state.role) !== -1;
       var okName = !q || norm(c.name).indexOf(q) !== -1;
       var vis = okRole && okName;
       tiles[c.id].hidden = !vis;
@@ -226,14 +226,21 @@ var Core = (function () {
     $('gempty').hidden = shown > 0;
   }
 
+  // Etiquetas filtrables de un campeón: roles + especies (Darkin, Yordle)
+  function tags(c) {
+    return c.roles.concat(c.species || []);
+  }
+
   function buildRoles() {
     var set = {};
+    var spec = {};
     state.all.forEach(function (c) {
       c.roles.forEach(function (r) { set[r] = true; });
+      (c.species || []).forEach(function (s) { spec[s] = true; });
     });
 
     var box = $('roles');
-    var names = [''].concat(Object.keys(set).sort());
+    var names = [''].concat(Object.keys(set).sort(), Object.keys(spec).sort());
 
     names.forEach(function (r) {
       var b = document.createElement('button');
