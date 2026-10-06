@@ -1,0 +1,1405 @@
+[
+ {
+  "id": "aatrox",
+  "name": "Aatrox",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Aatrox.webp"
+ },
+ {
+  "id": "ahri",
+  "name": "Ahri",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Ahri.webp"
+ },
+ {
+  "id": "akali",
+  "name": "Akali",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Akali.webp"
+ },
+ {
+  "id": "akshan",
+  "name": "Akshan",
+  "roles": [
+   "Marksman",
+   "Assassin"
+  ],
+  "icon": "Akshan.webp"
+ },
+ {
+  "id": "alistar",
+  "name": "Alistar",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Alistar.webp"
+ },
+ {
+  "id": "ambessa",
+  "name": "Ambessa",
+  "roles": [
+   "Diver",
+   "Skirmisher"
+  ],
+  "icon": "Ambessa.webp"
+ },
+ {
+  "id": "amumu",
+  "name": "Amumu",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Amumu.webp"
+ },
+ {
+  "id": "anivia",
+  "name": "Anivia",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Anivia.webp"
+ },
+ {
+  "id": "annie",
+  "name": "Annie",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Annie.webp"
+ },
+ {
+  "id": "aphelios",
+  "name": "Aphelios",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Aphelios.webp"
+ },
+ {
+  "id": "ashe",
+  "name": "Ashe",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Ashe.webp"
+ },
+ {
+  "id": "aurelionsol",
+  "name": "Aurelion Sol",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Aurelion Sol.webp"
+ },
+ {
+  "id": "aurora",
+  "name": "Aurora",
+  "roles": [
+   "Burst",
+   "Assassin"
+  ],
+  "icon": "Aurora.webp"
+ },
+ {
+  "id": "azir",
+  "name": "Azir",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Azir.webp"
+ },
+ {
+  "id": "bard",
+  "name": "Bard",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Bard.webp"
+ },
+ {
+  "id": "belveth",
+  "name": "Bel'Veth",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Bel'Veth.webp"
+ },
+ {
+  "id": "blitzcrank",
+  "name": "Blitzcrank",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Blitzcrank.webp"
+ },
+ {
+  "id": "brand",
+  "name": "Brand",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Brand.webp"
+ },
+ {
+  "id": "braum",
+  "name": "Braum",
+  "roles": [
+   "Warden"
+  ],
+  "icon": "Braum.webp"
+ },
+ {
+  "id": "briar",
+  "name": "Briar",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Briar.webp"
+ },
+ {
+  "id": "caitlyn",
+  "name": "Caitlyn",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Caitlyn.webp"
+ },
+ {
+  "id": "camille",
+  "name": "Camille",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Camille.webp"
+ },
+ {
+  "id": "cassiopeia",
+  "name": "Cassiopeia",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Cassiopeia.webp"
+ },
+ {
+  "id": "chogath",
+  "name": "Cho'Gath",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Cho'Gath.webp"
+ },
+ {
+  "id": "corki",
+  "name": "Corki",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Corki.webp"
+ },
+ {
+  "id": "darius",
+  "name": "Darius",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Darius.webp"
+ },
+ {
+  "id": "diana",
+  "name": "Diana",
+  "roles": [
+   "Assassin",
+   "Diver"
+  ],
+  "icon": "Diana.webp"
+ },
+ {
+  "id": "drmundo",
+  "name": "Dr. Mundo",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Dr. Mundo.webp"
+ },
+ {
+  "id": "draven",
+  "name": "Draven",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Draven.webp"
+ },
+ {
+  "id": "ekko",
+  "name": "Ekko",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Ekko.webp"
+ },
+ {
+  "id": "elise",
+  "name": "Elise",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Elise.webp"
+ },
+ {
+  "id": "evelynn",
+  "name": "Evelynn",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Evelynn.webp"
+ },
+ {
+  "id": "ezreal",
+  "name": "Ezreal",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Ezreal.webp"
+ },
+ {
+  "id": "fiddlesticks",
+  "name": "Fiddlesticks",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Fiddlesticks.webp"
+ },
+ {
+  "id": "fiora",
+  "name": "Fiora",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Fiora.webp"
+ },
+ {
+  "id": "fizz",
+  "name": "Fizz",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Fizz.webp"
+ },
+ {
+  "id": "galio",
+  "name": "Galio",
+  "roles": [
+   "Warden"
+  ],
+  "icon": "Galio.webp"
+ },
+ {
+  "id": "gangplank",
+  "name": "Gangplank",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Gangplank.webp"
+ },
+ {
+  "id": "garen",
+  "name": "Garen",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Garen.webp"
+ },
+ {
+  "id": "gnar",
+  "name": "Gnar",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Gnar.webp"
+ },
+ {
+  "id": "gragas",
+  "name": "Gragas",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Gragas.webp"
+ },
+ {
+  "id": "graves",
+  "name": "Graves",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Graves.webp"
+ },
+ {
+  "id": "gwen",
+  "name": "Gwen",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Gwen.webp"
+ },
+ {
+  "id": "hecarim",
+  "name": "Hecarim",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Hecarim.webp"
+ },
+ {
+  "id": "heimerdinger",
+  "name": "Heimerdinger",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Heimerdinger.webp"
+ },
+ {
+  "id": "hwei",
+  "name": "Hwei",
+  "roles": [
+   "Artillery"
+  ],
+  "icon": "Hwei.webp"
+ },
+ {
+  "id": "illaoi",
+  "name": "Illaoi",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Illaoi.webp"
+ },
+ {
+  "id": "irelia",
+  "name": "Irelia",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Irelia.webp"
+ },
+ {
+  "id": "ivern",
+  "name": "Ivern",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Ivern.webp"
+ },
+ {
+  "id": "janna",
+  "name": "Janna",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Janna.webp"
+ },
+ {
+  "id": "jarvaniv",
+  "name": "Jarvan IV",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Jarvan IV.webp"
+ },
+ {
+  "id": "jax",
+  "name": "Jax",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Jax.webp"
+ },
+ {
+  "id": "jayce",
+  "name": "Jayce",
+  "roles": [
+   "Artillery"
+  ],
+  "icon": "Jayce.webp"
+ },
+ {
+  "id": "jhin",
+  "name": "Jhin",
+  "roles": [
+   "Marksman",
+   "Catcher"
+  ],
+  "icon": "Jhin.webp"
+ },
+ {
+  "id": "jinx",
+  "name": "Jinx",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Jinx.webp"
+ },
+ {
+  "id": "ksante",
+  "name": "K'Sante",
+  "roles": [
+   "Warden",
+   "Skirmisher"
+  ],
+  "icon": "K'Sante.webp"
+ },
+ {
+  "id": "kaisa",
+  "name": "Kai'Sa",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Kai'Sa.webp"
+ },
+ {
+  "id": "kalista",
+  "name": "Kalista",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Kalista.webp"
+ },
+ {
+  "id": "karma",
+  "name": "Karma",
+  "roles": [
+   "Burst",
+   "Enchanter"
+  ],
+  "icon": "Karma.webp"
+ },
+ {
+  "id": "karthus",
+  "name": "Karthus",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Karthus.webp"
+ },
+ {
+  "id": "kassadin",
+  "name": "Kassadin",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Kassadin.webp"
+ },
+ {
+  "id": "katarina",
+  "name": "Katarina",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Katarina.webp"
+ },
+ {
+  "id": "kayle",
+  "name": "Kayle",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Kayle.webp"
+ },
+ {
+  "id": "kayn",
+  "name": "Kayn",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Kayn.webp"
+ },
+ {
+  "id": "kennen",
+  "name": "Kennen",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Kennen.webp"
+ },
+ {
+  "id": "khazix",
+  "name": "Kha'Zix",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Kha'Zix.webp"
+ },
+ {
+  "id": "kindred",
+  "name": "Kindred",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Kindred.webp"
+ },
+ {
+  "id": "kled",
+  "name": "Kled",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Kled.webp"
+ },
+ {
+  "id": "kogmaw",
+  "name": "Kog'Maw",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Kog'Maw.webp"
+ },
+ {
+  "id": "leblanc",
+  "name": "LeBlanc",
+  "roles": [
+   "Burst",
+   "Assassin"
+  ],
+  "icon": "LeBlanc.webp"
+ },
+ {
+  "id": "leesin",
+  "name": "Lee Sin",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Lee Sin.webp"
+ },
+ {
+  "id": "leona",
+  "name": "Leona",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Leona.webp"
+ },
+ {
+  "id": "lillia",
+  "name": "Lillia",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Lillia.webp"
+ },
+ {
+  "id": "lissandra",
+  "name": "Lissandra",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Lissandra.webp"
+ },
+ {
+  "id": "locke",
+  "name": "Locke",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Locke.webp"
+ },
+ {
+  "id": "lucian",
+  "name": "Lucian",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Lucian.webp"
+ },
+ {
+  "id": "lulu",
+  "name": "Lulu",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Lulu.webp"
+ },
+ {
+  "id": "lux",
+  "name": "Lux",
+  "roles": [
+   "Burst",
+   "Artillery"
+  ],
+  "icon": "Lux.webp"
+ },
+ {
+  "id": "malphite",
+  "name": "Malphite",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Malphite.webp"
+ },
+ {
+  "id": "malzahar",
+  "name": "Malzahar",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Malzahar.webp"
+ },
+ {
+  "id": "maokai",
+  "name": "Maokai",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Maokai.webp"
+ },
+ {
+  "id": "masteryi",
+  "name": "Master Yi",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Master Yi.webp"
+ },
+ {
+  "id": "mel",
+  "name": "Mel",
+  "roles": [
+   "Artillery"
+  ],
+  "icon": "Mel.webp"
+ },
+ {
+  "id": "milio",
+  "name": "Milio",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Milio.webp"
+ },
+ {
+  "id": "missfortune",
+  "name": "Miss Fortune",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Miss Fortune.webp"
+ },
+ {
+  "id": "mordekaiser",
+  "name": "Mordekaiser",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Mordekaiser.webp"
+ },
+ {
+  "id": "morgana",
+  "name": "Morgana",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Morgana.webp"
+ },
+ {
+  "id": "naafiri",
+  "name": "Naafiri",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Naafiri.webp"
+ },
+ {
+  "id": "nami",
+  "name": "Nami",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Nami.webp"
+ },
+ {
+  "id": "nasus",
+  "name": "Nasus",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Nasus.webp"
+ },
+ {
+  "id": "nautilus",
+  "name": "Nautilus",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Nautilus.webp"
+ },
+ {
+  "id": "neeko",
+  "name": "Neeko",
+  "roles": [
+   "Burst",
+   "Catcher"
+  ],
+  "icon": "Neeko.webp"
+ },
+ {
+  "id": "nidalee",
+  "name": "Nidalee",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Nidalee.webp"
+ },
+ {
+  "id": "nilah",
+  "name": "Nilah",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Nilah.webp"
+ },
+ {
+  "id": "nocturne",
+  "name": "Nocturne",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Nocturne.webp"
+ },
+ {
+  "id": "nunuwillump",
+  "name": "Nunu & Willump",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Nunu & Willump.webp"
+ },
+ {
+  "id": "olaf",
+  "name": "Olaf",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Olaf.webp"
+ },
+ {
+  "id": "orianna",
+  "name": "Orianna",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Orianna.webp"
+ },
+ {
+  "id": "ornn",
+  "name": "Ornn",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Ornn.webp"
+ },
+ {
+  "id": "pantheon",
+  "name": "Pantheon",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Pantheon.webp"
+ },
+ {
+  "id": "poppy",
+  "name": "Poppy",
+  "roles": [
+   "Warden"
+  ],
+  "icon": "Poppy.webp"
+ },
+ {
+  "id": "pyke",
+  "name": "Pyke",
+  "roles": [
+   "Assassin",
+   "Catcher"
+  ],
+  "icon": "Pyke.webp"
+ },
+ {
+  "id": "qiyana",
+  "name": "Qiyana",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Qiyana.webp"
+ },
+ {
+  "id": "quinn",
+  "name": "Quinn",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Quinn.webp"
+ },
+ {
+  "id": "rakan",
+  "name": "Rakan",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Rakan.webp"
+ },
+ {
+  "id": "rammus",
+  "name": "Rammus",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Rammus.webp"
+ },
+ {
+  "id": "reksai",
+  "name": "Rek'Sai",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Rek'Sai.webp"
+ },
+ {
+  "id": "rell",
+  "name": "Rell",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Rell.webp"
+ },
+ {
+  "id": "renataglasc",
+  "name": "Renata Glasc",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Renata Glasc.webp"
+ },
+ {
+  "id": "renekton",
+  "name": "Renekton",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Renekton.webp"
+ },
+ {
+  "id": "rengar",
+  "name": "Rengar",
+  "roles": [
+   "Assassin",
+   "Diver"
+  ],
+  "icon": "Rengar.webp"
+ },
+ {
+  "id": "riven",
+  "name": "Riven",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Riven.webp"
+ },
+ {
+  "id": "rumble",
+  "name": "Rumble",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Rumble.webp"
+ },
+ {
+  "id": "ryze",
+  "name": "Ryze",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Ryze.webp"
+ },
+ {
+  "id": "samira",
+  "name": "Samira",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Samira.webp"
+ },
+ {
+  "id": "sejuani",
+  "name": "Sejuani",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Sejuani.webp"
+ },
+ {
+  "id": "senna",
+  "name": "Senna",
+  "roles": [
+   "Marksman",
+   "Enchanter"
+  ],
+  "icon": "Senna.webp"
+ },
+ {
+  "id": "seraphine",
+  "name": "Seraphine",
+  "roles": [
+   "Burst",
+   "Enchanter"
+  ],
+  "icon": "Seraphine.webp"
+ },
+ {
+  "id": "sett",
+  "name": "Sett",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Sett.webp"
+ },
+ {
+  "id": "shaco",
+  "name": "Shaco",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Shaco.webp"
+ },
+ {
+  "id": "shen",
+  "name": "Shen",
+  "roles": [
+   "Warden"
+  ],
+  "icon": "Shen.webp"
+ },
+ {
+  "id": "shyvana",
+  "name": "Shyvana",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Shyvana.webp"
+ },
+ {
+  "id": "singed",
+  "name": "Singed",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Singed.webp"
+ },
+ {
+  "id": "sion",
+  "name": "Sion",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Sion.webp"
+ },
+ {
+  "id": "sivir",
+  "name": "Sivir",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Sivir.webp"
+ },
+ {
+  "id": "skarner",
+  "name": "Skarner",
+  "roles": [
+   "Vanguard",
+   "Juggernaut"
+  ],
+  "icon": "Skarner.webp"
+ },
+ {
+  "id": "smolder",
+  "name": "Smolder",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Smolder.webp"
+ },
+ {
+  "id": "sona",
+  "name": "Sona",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Sona.webp"
+ },
+ {
+  "id": "soraka",
+  "name": "Soraka",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Soraka.webp"
+ },
+ {
+  "id": "swain",
+  "name": "Swain",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Swain.webp"
+ },
+ {
+  "id": "sylas",
+  "name": "Sylas",
+  "roles": [
+   "Burst",
+   "Skirmisher"
+  ],
+  "icon": "Sylas.webp"
+ },
+ {
+  "id": "syndra",
+  "name": "Syndra",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Syndra.webp"
+ },
+ {
+  "id": "tahmkench",
+  "name": "Tahm Kench",
+  "roles": [
+   "Warden"
+  ],
+  "icon": "Tahm Kench.webp"
+ },
+ {
+  "id": "taliyah",
+  "name": "Taliyah",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Taliyah.webp"
+ },
+ {
+  "id": "talon",
+  "name": "Talon",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Talon.webp"
+ },
+ {
+  "id": "taric",
+  "name": "Taric",
+  "roles": [
+   "Enchanter",
+   "Warden"
+  ],
+  "icon": "Taric.webp"
+ },
+ {
+  "id": "teemo",
+  "name": "Teemo",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Teemo.webp"
+ },
+ {
+  "id": "thresh",
+  "name": "Thresh",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Thresh.webp"
+ },
+ {
+  "id": "tristana",
+  "name": "Tristana",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Tristana.webp"
+ },
+ {
+  "id": "trundle",
+  "name": "Trundle",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Trundle.webp"
+ },
+ {
+  "id": "tryndamere",
+  "name": "Tryndamere",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Tryndamere.webp"
+ },
+ {
+  "id": "twistedfate",
+  "name": "Twisted Fate",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Twisted Fate.webp"
+ },
+ {
+  "id": "twitch",
+  "name": "Twitch",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Twitch.webp"
+ },
+ {
+  "id": "udyr",
+  "name": "Udyr",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Udyr.webp"
+ },
+ {
+  "id": "urgot",
+  "name": "Urgot",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Urgot.webp"
+ },
+ {
+  "id": "varus",
+  "name": "Varus",
+  "roles": [
+   "Marksman",
+   "Artillery"
+  ],
+  "icon": "Varus.webp"
+ },
+ {
+  "id": "vayne",
+  "name": "Vayne",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Vayne.webp"
+ },
+ {
+  "id": "veigar",
+  "name": "Veigar",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Veigar.webp"
+ },
+ {
+  "id": "velkoz",
+  "name": "Vel'Koz",
+  "roles": [
+   "Artillery"
+  ],
+  "icon": "Vel'Koz.webp"
+ },
+ {
+  "id": "vex",
+  "name": "Vex",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Vex.webp"
+ },
+ {
+  "id": "vi",
+  "name": "Vi",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Vi.webp"
+ },
+ {
+  "id": "viego",
+  "name": "Viego",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Viego.webp"
+ },
+ {
+  "id": "viktor",
+  "name": "Viktor",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Viktor.webp"
+ },
+ {
+  "id": "vladimir",
+  "name": "Vladimir",
+  "roles": [
+   "Battlemage"
+  ],
+  "icon": "Vladimir.webp"
+ },
+ {
+  "id": "volibear",
+  "name": "Volibear",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Volibear.webp"
+ },
+ {
+  "id": "warwick",
+  "name": "Warwick",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Warwick.webp"
+ },
+ {
+  "id": "wukong",
+  "name": "Wukong",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Wukong.webp"
+ },
+ {
+  "id": "xayah",
+  "name": "Xayah",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Xayah.webp"
+ },
+ {
+  "id": "xerath",
+  "name": "Xerath",
+  "roles": [
+   "Artillery"
+  ],
+  "icon": "Xerath.webp"
+ },
+ {
+  "id": "xinzhao",
+  "name": "Xin Zhao",
+  "roles": [
+   "Diver"
+  ],
+  "icon": "Xin Zhao.webp"
+ },
+ {
+  "id": "yasuo",
+  "name": "Yasuo",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Yasuo.webp"
+ },
+ {
+  "id": "yone",
+  "name": "Yone",
+  "roles": [
+   "Assassin",
+   "Skirmisher"
+  ],
+  "icon": "Yone.webp"
+ },
+ {
+  "id": "yorick",
+  "name": "Yorick",
+  "roles": [
+   "Juggernaut"
+  ],
+  "icon": "Yorick.webp"
+ },
+ {
+  "id": "yunara",
+  "name": "Yunara",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Yunara.webp"
+ },
+ {
+  "id": "yuumi",
+  "name": "Yuumi",
+  "roles": [
+   "Enchanter"
+  ],
+  "icon": "Yuumi.webp"
+ },
+ {
+  "id": "zaahen",
+  "name": "Zaahen",
+  "roles": [
+   "Skirmisher"
+  ],
+  "icon": "Zaahen.webp"
+ },
+ {
+  "id": "zac",
+  "name": "Zac",
+  "roles": [
+   "Vanguard"
+  ],
+  "icon": "Zac.webp"
+ },
+ {
+  "id": "zed",
+  "name": "Zed",
+  "roles": [
+   "Assassin"
+  ],
+  "icon": "Zed.webp"
+ },
+ {
+  "id": "zeri",
+  "name": "Zeri",
+  "roles": [
+   "Marksman"
+  ],
+  "icon": "Zeri.webp"
+ },
+ {
+  "id": "ziggs",
+  "name": "Ziggs",
+  "roles": [
+   "Artillery"
+  ],
+  "icon": "Ziggs.webp"
+ },
+ {
+  "id": "zilean",
+  "name": "Zilean",
+  "roles": [
+   "Specialist"
+  ],
+  "icon": "Zilean.webp"
+ },
+ {
+  "id": "zoe",
+  "name": "Zoe",
+  "roles": [
+   "Burst"
+  ],
+  "icon": "Zoe.webp"
+ },
+ {
+  "id": "zyra",
+  "name": "Zyra",
+  "roles": [
+   "Catcher"
+  ],
+  "icon": "Zyra.webp"
+ }
+]

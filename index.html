@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Elige tu campeón</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="cf"></canvas>
+
+  <main>
+    <h1>⚔️ Elige tu campeón</h1>
+    <p class="sub">Marca los campeones de League of Legends que quieras y deja que el azar decida.</p>
+
+    <!-- ================= SELECTOR DE CAMPEONES ================= -->
+    <div class="card" id="picker">
+      <input type="search" id="q" class="search" placeholder="Buscar campeón…" autocomplete="off">
+
+      <div class="roles" id="roles"></div>
+
+      <div class="bar">
+        <span class="hint" id="cnt"></span>
+        <span class="acts">
+          <button type="button" class="mini" id="a-all">Marcar visibles</button>
+          <button type="button" class="mini" id="a-none">Limpiar</button>
+        </span>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <p class="hint" id="gempty" hidden>Ningún campeón coincide con la búsqueda.</p>
+    </div>
+
+    <!-- ================= TOMA DE DECISIONES ================= -->
+    <div class="tabs" id="tabs">
+      <button class="tab on" data-v="c">🎰 Carrete</button>
+      <button class="tab" data-v="w">🎡 Ruleta</button>
+      <button class="tab" data-v="p">🔴 Plinko</button>
+      <button class="tab" data-v="g">✨ Gachapón</button>
+      <button class="tab" data-v="s">🍒 Tragaperras</button>
+      <button class="tab" data-v="r">🏁 Carrera</button>
+      <button class="tab" data-v="k">🎴 Cartas</button>
+    </div>
+
+    <div class="card">
+      <section id="s-c">
+        <div class="reel" id="reel">
+          <div class="line" id="l0">&nbsp;</div>
+          <div class="line mid" id="l1">¿QUIÉN SERÁ?</div>
+          <div class="line" id="l2">&nbsp;</div>
+        </div>
+        <button class="go" id="c-go">Elegir</button>
+      </section>
+
+      <section id="s-w" hidden>
+        <canvas class="g" id="wc" width="320" height="320"></canvas>
+        <p class="hint" id="w-note" hidden>Con tantos campeones los nombres no caben en la ruleta; el resultado se muestra al final.</p>
+        <button class="go" id="w-go">Girar ruleta</button>
+      </section>
+
+      <section id="s-p" hidden>
+        <canvas class="g" id="pc" width="340" height="400"></canvas>
+        <button class="go" id="p-go">Soltar bola</button>
+      </section>
+
+      <section id="s-g" hidden>
+        <canvas class="g" id="gc" width="340" height="380" style="border-radius:14px"></canvas>
+        <button class="go" id="g-go">✨ Hacer un deseo</button>
+      </section>
+
+      <section id="s-s" hidden>
+        <p class="hint">
+          Cada carrete sale al azar por separado. Gana el campeón que aparezca
+          en 2 o más carretes; si no hay aciertos, se vuelve a tirar.
+        </p>
+        <div class="sm">
+          <h3>★ JACKPOT ★</h3>
+          <div class="lights">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="rl">
+            <div class="rw" id="r0"><div></div><div></div><div></div></div>
+            <div class="rw" id="r1"><div></div><div></div><div></div></div>
+            <div class="rw" id="r2"><div></div><div></div><div></div></div>
+          </div>
+          <div class="lever" id="lev"></div>
+        </div>
+        <button class="go" id="s-go">Jalar palanca</button>
+      </section>
+
+      <section id="s-r" hidden>
+        <p class="hint">
+          Todos corren a la vez con saltos al azar. El primero en cruzar la meta gana.
+        </p>
+        <div id="trk"></div>
+        <button class="go" id="r-go">¡Largada!</button>
+      </section>
+
+      <section id="s-k" hidden>
+        <p class="hint">
+          Las cartas se muestran, se barajan boca abajo y tú eliges una.
+          Lo que hay detrás lo decide el azar.
+        </p>
+        <div class="kbox" id="kbox"></div>
+        <button class="go" id="k-go">Barajar</button>
+      </section>
+
+      <p class="warn" id="limit" hidden></p>
+
+      <p class="result" id="res"></p>
+    </div>
+
+    <p class="legal">
+      Proyecto de fans, no afiliado a Riot Games. League of Legends y sus campeones
+      son marcas de Riot Games, Inc.
+    </p>
+  </main>
+
+  <!-- core.js primero: utilidades, datos de campeones, selección y estado global -->
+  <script src="core.js"></script>
+  <!-- games.js después: registra los juegos y engancha los botones -->
+  <script src="games.js"></script>
+</body>
+</html>
