@@ -245,18 +245,24 @@ var Core = (function () {
 
     var box = $('roles');
     // Una línea por grupo: roles, líneas, regiones y especies
-    var groups = [[''].concat(Object.keys(set).sort()), Object.keys(lanes).sort(), Object.keys(regs).sort(), Object.keys(spec).sort()];
+    var groups = [
+      ['Rol', [''].concat(Object.keys(set).sort())],
+      ['Línea', Object.keys(lanes).sort()],
+      ['Región', Object.keys(regs).sort()],
+      ['Especie', Object.keys(spec).sort()]
+    ];
     var names = [];
-    groups.forEach(function (g, i) {
-      if (i > 0) names.push(null);
-      names = names.concat(g);
+    groups.forEach(function (g) {
+      names.push({ title: g[0] });
+      names = names.concat(g[1]);
     });
 
     names.forEach(function (r) {
-      if (r === null) {
-        var br = document.createElement('span');
-        br.className = 'rbreak';
-        box.appendChild(br);
+      if (typeof r === 'object') {
+        var h = document.createElement('div');
+        h.className = 'rtitle';
+        h.textContent = r.title;
+        box.appendChild(h);
         return;
       }
       var b = document.createElement('button');
