@@ -4,7 +4,8 @@ Data de los 173 campeones de League of Legends (parche 16.19): nombre, rol/clase
 
 ## Contenido
 
-- `champions.csv` — tabla con columnas `Champion`, `Role(s)`, `Icon`, `IconFile`
+- `champions.csv` — tabla con columnas `Champion`, `Region`, `Role(s)`, `Icon`, `IconFile`
+- Los campeones sin región fija o poco clara (celestiales, demonios, etc.) figuran como `desconocido`.
 - `icons/` — iconos oficiales (WEBP) de cada campeón, nombrados con el nombre del campeón
 
 ## Fuentes
