@@ -5,6 +5,8 @@ Marca los campeones que quieras (con su ícono), elige un juego y deja que decid
 
 Es una página estática: HTML, CSS y JavaScript puro, sin dependencias ni proceso de compilación.
 
+> ¿Vas a trabajar en el proyecto con una IA? Pásale [`CONTEXT.md`](CONTEXT.md): resume qué es, cómo está hecho y qué falta.
+
 ## Cómo se usa
 
 1. **Elige campeones** en la cuadrícula: un clic los marca o desmarca. Puedes buscar por
