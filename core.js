@@ -271,7 +271,9 @@ var Core = (function () {
         return I18N.tag(a).localeCompare(I18N.tag(b));
       }))],
       [I18N.t('grp.lane'), ['Top', 'Mid', 'Jungle', 'Support', 'Bottom'].filter(function (l) { return lanes[l]; })],
-      [I18N.t('grp.region'), Object.keys(regs).sort()],
+      [I18N.t('grp.region'), Object.keys(regs).sort(function (a, b) {
+        return I18N.tag(a).localeCompare(I18N.tag(b));
+      })],
       [I18N.t('grp.species'), Object.keys(spec).sort()]
     ];
     var names = [];

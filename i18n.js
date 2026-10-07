@@ -80,7 +80,9 @@ var I18N = (function () {
       'tag.Specialist': 'Especialista', 'tag.Catcher': 'Capturador', 'tag.Warden': 'Guardián',
       'tag.Artillery': 'Artillero', 'tag.Enchanter': 'Encantador',
       'tag.Top': 'Superior', 'tag.Mid': 'Central', 'tag.Jungle': 'Jungla',
-      'tag.Support': 'Soporte', 'tag.Bottom': 'Inferior'
+      'tag.Support': 'Soporte', 'tag.Bottom': 'Inferior',
+      'tag.The Void': 'El Vacío', 'tag.Bandle City': 'Ciudad de Bandle',
+      'tag.Shadow Isles': 'Islas de la Sombra', 'tag.Bilgewater': 'Aguas Turbias'
     },
 
     en: {
