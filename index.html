@@ -10,38 +10,43 @@
   <canvas id="cf"></canvas>
 
   <main>
-    <h1>⚔️ Elige tu campeón</h1>
-    <p class="sub">Marca los campeones de League of Legends que quieras y deja que el azar decida.</p>
+    <div class="lang" id="lang">
+      <button type="button" data-l="es">ES</button>
+      <button type="button" data-l="en">EN</button>
+    </div>
+
+    <h1 data-i18n="title">⚔️ Elige tu campeón</h1>
+    <p class="sub" data-i18n="sub">Marca los campeones de League of Legends que quieras y deja que el azar decida.</p>
 
     <!-- ================= SELECTOR DE CAMPEONES ================= -->
     <div class="card" id="picker">
-      <input type="search" id="q" class="search" placeholder="Buscar campeón…" autocomplete="off">
+      <input type="search" id="q" class="search" data-i18n-ph="search" placeholder="Buscar campeón…" autocomplete="off">
 
       <div class="roles" id="roles"></div>
 
       <div class="bar">
         <span class="hint" id="cnt"></span>
         <span class="acts">
-          <button type="button" class="mini" id="a-all">Marcar visibles</button>
-          <button type="button" class="mini" id="a-none">Limpiar</button>
+          <button type="button" class="mini" id="a-all" data-i18n="selVisible">Marcar visibles</button>
+          <button type="button" class="mini" id="a-none" data-i18n="clear">Limpiar</button>
         </span>
       </div>
 
       <div class="grid" id="grid"></div>
-      <p class="hint" id="gempty" hidden>Ningún campeón coincide con la búsqueda.</p>
+      <p class="hint" id="gempty" data-i18n="noMatch" hidden>Ningún campeón coincide con la búsqueda.</p>
     </div>
 
     <!-- ================= TOMA DE DECISIONES ================= -->
     <div class="tabs" id="tabs">
-      <button class="tab on" data-v="c">🎰 Carrete</button>
-      <button class="tab" data-v="w">🎡 Ruleta</button>
-      <button class="tab" data-v="p">🔴 Plinko</button>
-      <button class="tab" data-v="g">✨ Gachapón</button>
-      <button class="tab" data-v="s">🍒 Tragaperras</button>
-      <button class="tab" data-v="r">🏁 Carrera</button>
-      <button class="tab" data-v="k">🎴 Cartas</button>
-      <button class="tab" data-v="b">⚔️ Batalla</button>
-      <button class="tab" data-v="j">🃏 Blackjack</button>
+      <button class="tab on" data-v="c" data-i18n="tab.c">🎰 Carrete</button>
+      <button class="tab" data-v="w" data-i18n="tab.w">🎡 Ruleta</button>
+      <button class="tab" data-v="p" data-i18n="tab.p">🔴 Plinko</button>
+      <button class="tab" data-v="g" data-i18n="tab.g">✨ Gachapón</button>
+      <button class="tab" data-v="s" data-i18n="tab.s">🍒 Tragaperras</button>
+      <button class="tab" data-v="r" data-i18n="tab.r">🏁 Carrera</button>
+      <button class="tab" data-v="k" data-i18n="tab.k">🎴 Cartas</button>
+      <button class="tab" data-v="b" data-i18n="tab.b">⚔️ Batalla</button>
+      <button class="tab" data-v="j" data-i18n="tab.j">🃏 Blackjack</button>
     </div>
 
     <div class="card">
@@ -51,27 +56,27 @@
           <div class="line mid" id="l1">¿QUIÉN SERÁ?</div>
           <div class="line" id="l2">&nbsp;</div>
         </div>
-        <button class="go" id="c-go">Elegir</button>
+        <button class="go" id="c-go" data-i18n="go.c">Elegir</button>
       </section>
 
       <section id="s-w" hidden>
         <canvas class="g" id="wc" width="320" height="320"></canvas>
-        <p class="hint" id="w-note" hidden>Con tantos campeones los nombres no caben en la ruleta; el resultado se muestra al final.</p>
-        <button class="go" id="w-go">Girar ruleta</button>
+        <p class="hint" id="w-note" data-i18n="wNote" hidden>Con tantos campeones los nombres no caben en la ruleta; el resultado se muestra al final.</p>
+        <button class="go" id="w-go" data-i18n="go.w">Girar ruleta</button>
       </section>
 
       <section id="s-p" hidden>
         <canvas class="g" id="pc" width="340" height="400"></canvas>
-        <button class="go" id="p-go">Soltar bola</button>
+        <button class="go" id="p-go" data-i18n="go.p">Soltar bola</button>
       </section>
 
       <section id="s-g" hidden>
         <canvas class="g" id="gc" width="340" height="380" style="border-radius:14px"></canvas>
-        <button class="go" id="g-go">✨ Hacer un deseo</button>
+        <button class="go" id="g-go" data-i18n="go.g">✨ Hacer un deseo</button>
       </section>
 
       <section id="s-s" hidden>
-        <p class="hint">
+        <p class="hint" data-i18n="sHint">
           Cada carrete sale al azar por separado. Gana el campeón que aparezca
           en 2 o más carretes; si no hay aciertos, se vuelve a tirar.
         </p>
@@ -87,42 +92,42 @@
           </div>
           <div class="lever" id="lev"></div>
         </div>
-        <button class="go" id="s-go">Jalar palanca</button>
+        <button class="go" id="s-go" data-i18n="go.s">Jalar palanca</button>
       </section>
 
       <section id="s-r" hidden>
-        <p class="hint">
+        <p class="hint" data-i18n="rHint">
           Todos corren a la vez con saltos al azar. El primero en cruzar la meta gana.
         </p>
         <div id="trk"></div>
-        <button class="go" id="r-go">¡Largada!</button>
+        <button class="go" id="r-go" data-i18n="go.r">¡Largada!</button>
       </section>
 
       <section id="s-k" hidden>
-        <p class="hint">
+        <p class="hint" data-i18n="kHint">
           Las cartas se muestran, se barajan boca abajo y tú eliges una.
           Lo que hay detrás lo decide el azar.
         </p>
         <div class="kbox" id="kbox"></div>
-        <button class="go" id="k-go">Barajar</button>
+        <button class="go" id="k-go" data-i18n="go.k">Barajar</button>
       </section>
 
       <section id="s-b" hidden>
-        <p class="hint">
+        <p class="hint" data-i18n="bHint">
           Los campeones chocan entre sí y se hacen daño según su rol
           (los Vanguard aguantan, los Assassin pegan fuerte). El último en pie gana.
         </p>
         <canvas class="g" id="bc" width="340" height="400"></canvas>
-        <button class="go" id="b-go">¡A pelear!</button>
+        <button class="go" id="b-go" data-i18n="go.b">¡A pelear!</button>
       </section>
 
       <section id="s-j" hidden>
-        <p class="hint">
+        <p class="hint" data-i18n="jHint">
           Cada campeón juega su mano y pide carta hasta llegar a 17. Gana quien
           más se acerque a 21 sin pasarse; si todos se pasan, el que menos se pasó.
         </p>
         <div id="jbox"></div>
-        <button class="go" id="j-go">Repartir</button>
+        <button class="go" id="j-go" data-i18n="go.j">Repartir</button>
       </section>
 
       <p class="warn" id="limit" hidden></p>
@@ -130,13 +135,14 @@
       <p class="result" id="res"></p>
     </div>
 
-    <p class="legal">
+    <p class="legal" data-i18n="legal">
       Proyecto de fans, no afiliado a Riot Games. League of Legends y sus campeones
       son marcas de Riot Games, Inc.
     </p>
   </main>
 
-  <!-- core.js primero: utilidades, datos de campeones, selección y estado global -->
+  <!-- i18n.js primero: textos; core.js: utilidades, datos de campeones, selección y estado global -->
+  <script src="i18n.js"></script>
   <script src="core.js"></script>
   <!-- games.js después: registra los juegos y engancha los botones -->
   <script src="games.js"></script>

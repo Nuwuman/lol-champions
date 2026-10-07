@@ -30,11 +30,11 @@ var Core = (function () {
   var tiles = {};     // id -> elemento del grid
 
   // ---------- Registro de juegos ----------
-  // Cada juego se registra con: { preview, onShow, max, name }
+  // Cada juego se registra con: { preview, onShow, max }
   //   - preview(): dibuja el estado "en reposo" al cambiar de pestaña o de selección
   //   - onShow():  opcional, se ejecuta al abrir la pestaña
-  //   - max/name:  opcional; si hay más de `max` campeones seleccionados el juego
-  //                se bloquea y se muestra un aviso con `name`
+  //   - max:       opcional; si hay más de `max` campeones seleccionados el juego
+  //                se bloquea y se avisa (el nombre sale de I18N: clave `name.<id>`)
   var games = {};
 
   function registerGame(id, def) {
@@ -116,7 +116,7 @@ var Core = (function () {
       res.appendChild(img);
     }
 
-    res.appendChild(document.createTextNode('Resultado: '));
+    res.appendChild(document.createTextNode(I18N.t('result')));
     var b = document.createElement('b');
     b.textContent = t;
     res.appendChild(b);
@@ -124,7 +124,7 @@ var Core = (function () {
     if (champ) {
       var r = document.createElement('small');
       r.className = 'rroles';
-      r.textContent = champ.roles.join(' · ');
+      r.textContent = champ.roles.map(I18N.tag).join(' · ');
       res.appendChild(r);
     }
   }
@@ -147,9 +147,9 @@ var Core = (function () {
     var w = $('limit');
     w.hidden = !over;
     if (over) {
-      w.textContent = '⚠️ ' + over.name + ' solo está disponible con ' + over.max +
-        ' campeones o menos. Tienes ' + n + ' seleccionados: quita ' + (n - over.max) +
-        ' para usarlo.';
+      w.textContent = I18N.t('limit', {
+        name: I18N.t('name.' + state.tab), max: over.max, n: n, d: n - over.max
+      });
     }
   }
 
@@ -199,10 +199,10 @@ var Core = (function () {
 
     var n = state.opts.length;
     $('cnt').textContent = n === 0
-      ? 'Marca al menos 2 campeones.'
+      ? I18N.t('cnt.0')
       : n === 1
-        ? '1 campeón seleccionado · marca al menos 2.'
-        : n + ' campeones seleccionados.';
+        ? I18N.t('cnt.1')
+        : I18N.t('cnt.n', { n: n });
 
     state.res.textContent = '';
     saveSelection();
@@ -264,12 +264,15 @@ var Core = (function () {
     });
 
     var box = $('roles');
+    box.innerHTML = '';
     // Una línea por grupo: roles, líneas, regiones y especies
     var groups = [
-      ['Rol', [''].concat(Object.keys(set).sort())],
-      ['Línea', ['Top', 'Mid', 'Jungle', 'Support', 'Bottom'].filter(function (l) { return lanes[l]; })],
-      ['Región', Object.keys(regs).sort()],
-      ['Especie', Object.keys(spec).sort()]
+      [I18N.t('grp.role'), [''].concat(Object.keys(set).sort(function (a, b) {
+        return I18N.tag(a).localeCompare(I18N.tag(b));
+      }))],
+      [I18N.t('grp.lane'), ['Top', 'Mid', 'Jungle', 'Support', 'Bottom'].filter(function (l) { return lanes[l]; })],
+      [I18N.t('grp.region'), Object.keys(regs).sort()],
+      [I18N.t('grp.species'), Object.keys(spec).sort()]
     ];
     var names = [];
     groups.forEach(function (g) {
@@ -287,9 +290,9 @@ var Core = (function () {
       }
       var b = document.createElement('button');
       b.type = 'button';
-      b.className = 'role' + (r === '' ? ' on' : '');
+      b.className = 'role' + (r === state.role ? ' on' : '');
       b.dataset.r = r;
-      b.textContent = r || 'Todos';
+      b.textContent = r ? I18N.tag(r) : I18N.t('all');
       box.appendChild(b);
     });
 
@@ -304,6 +307,10 @@ var Core = (function () {
     };
   }
 
+  function tileTitle(c) {
+    return c.name + ' — ' + c.roles.map(I18N.tag).join(', ');
+  }
+
   function buildGrid() {
     var grid = $('grid');
     var frag = document.createDocumentFragment();
@@ -314,7 +321,7 @@ var Core = (function () {
       b.className = 'tile';
       b.dataset.id = c.id;
       b.setAttribute('aria-pressed', 'false');
-      b.title = c.name + ' — ' + c.roles.join(', ');
+      b.title = tileTitle(c);
 
       var img = document.createElement('img');
       img.src = iconSrc(c);
@@ -371,7 +378,7 @@ var Core = (function () {
 
   // ---------- Carga de datos (JSON estático, solo lectura) ----------
   function loadData() {
-    $('cnt').textContent = 'Cargando campeones…';
+    $('cnt').textContent = I18N.t('cnt.load');
 
     return fetch(DATA_URL)
       .then(function (r) {
@@ -386,8 +393,7 @@ var Core = (function () {
         updateSelection();
       })
       .catch(function (err) {
-        $('cnt').textContent = 'No se pudieron cargar los campeones (' + err.message + '). ' +
-          'Abre la página desde un servidor (GitHub Pages o Live Server), no con doble clic.';
+        $('cnt').textContent = I18N.t('cnt.err', { msg: err.message });
       });
   }
 
@@ -460,8 +466,22 @@ var Core = (function () {
     };
   }
 
+  // ---------- Idioma ----------
+  function setLang(l) {
+    if (state.busy || !I18N.set(l)) return;
+    if (!state.all.length) return;
+    buildRoles();
+    state.all.forEach(function (c) { tiles[c.id].title = tileTitle(c); });
+    updateSelection();   // refresca contador, aviso de límite y vista previa del juego
+  }
+
   // ---------- Arranque ----------
   function init() {
+    I18N.apply();
+    $('lang').onclick = function (e) {
+      var b = e.target.closest('button');
+      if (b) setLang(b.dataset.l);
+    };
     state.res = $('res');
     initTabs();
     initPicker();

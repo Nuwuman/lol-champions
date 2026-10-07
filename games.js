@@ -74,7 +74,7 @@
           show(0);
         } else {
           L[0].innerHTML = '&nbsp;';
-          L[1].textContent = '¿QUIÉN SERÁ?';
+          L[1].textContent = I18N.t('reelIdle');
           L[2].innerHTML = '&nbsp;';
         }
       }
@@ -221,7 +221,7 @@
         c.fillStyle = Core.cv('--muted');
         c.font = '14px system-ui';
         c.textAlign = 'center';
-        c.fillText('Disponible con ' + MAX + ' campeones o menos', PW / 2, PH / 2);
+        c.fillText(I18N.t('plinkoMax', { max: MAX }), PW / 2, PH / 2);
         c.restore();
         return;
       }
@@ -313,7 +313,6 @@
     };
 
     Core.registerGame('p', {
-      name: 'El Plinko',
       max: MAX,
       preview: function () { draw(geo()); }
     });
@@ -380,7 +379,7 @@
       c.fillStyle = '#ffd978';
       c.textAlign = 'center';
       c.font = 'bold 15px system-ui';
-      c.fillText('Haz un deseo', GW / 2, GH / 2 + 50);
+      c.fillText(I18N.t('wish'), GW / 2, GH / 2 + 50);
     }
 
     $('g-go').onclick = function () {
@@ -491,7 +490,7 @@
 
           c.font = '12px system-ui';
           c.fillStyle = 'rgba(255,233,168,.85)';
-          c.fillText(champ.roles.join(' · '), GW / 2, 257);
+          c.fillText(champ.roles.map(I18N.tag).join(' · '), GW / 2, 257);
 
           for (i = 0; i < 5; i++) {
             var q2 = Math.max(0, Math.min(1, (R - 350 - i * 220) / 200));
@@ -502,7 +501,7 @@
             c.globalAlpha = Math.min(1, (R - 1500) / 300);
             c.fillStyle = '#ffd978';
             c.font = 'bold 13px system-ui';
-            c.fillText('★ ¡CAMPEÓN! ★', GW / 2, 302);
+            c.fillText(I18N.t('champion'), GW / 2, 302);
           }
           c.restore();
 
@@ -651,7 +650,7 @@
 
         spin(o, !last, function () {
           if (!last) {
-            S.res.textContent = 'Intento ' + (k + 1) + ': sin aciertos, giro extra…';
+            S.res.textContent = I18N.t('slotFail', { k: k + 1 });
             k++;
             setTimeout(play, 700);
             return;
@@ -661,7 +660,7 @@
             e.classList.add(o[r] === w ? 'win' : 'lose');
           });
           Core.confetti();
-          Core.showRes(S.opts[w] + ' (' + m + ' aciertos' + (all.length > 1 ? ', intento ' + all.length : '') + ')', S.champs[w]);
+          Core.showRes(S.opts[w] + ' (' + I18N.t('hits', { m: m }) + (all.length > 1 ? ', ' + I18N.t('attempt', { n: all.length }) : '') + ')', S.champs[w]);
           Core.setBusy(false);
         });
       })();
@@ -734,7 +733,7 @@
       })();
     };
 
-    Core.registerGame('r', { name: 'La Carrera', max: RMAX, preview: raceInit });
+    Core.registerGame('r', { max: RMAX, preview: raceInit });
   })();
 
   // ============================================================
@@ -829,14 +828,14 @@
           if (++r < 5) setTimeout(mix, 650);
           else setTimeout(function () {
             kst = 'pick';
-            S.res.textContent = 'Elige una carta 👆';
+            S.res.textContent = I18N.t('pickCard');
             Core.setBusy(false);
           }, 700);
         })();
       }, 1700);
     };
 
-    Core.registerGame('k', { name: 'El juego de Cartas', max: CMAX, preview: kInit });
+    Core.registerGame('k', { max: CMAX, preview: kInit });
   })();
 
   // ============================================================
@@ -997,7 +996,6 @@
     };
 
     Core.registerGame('b', {
-      name: 'La Batalla',
       max: BMAX,
       preview: function () { setup(); draw(); }
     });
@@ -1091,7 +1089,7 @@
       })(0);
     };
 
-    Core.registerGame('j', { name: 'El Blackjack', max: JMAX, preview: jInit });
+    Core.registerGame('j', { max: JMAX, preview: jInit });
   })();
 
   // ============================================================
