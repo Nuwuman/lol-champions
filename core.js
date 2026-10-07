@@ -70,8 +70,12 @@ var Core = (function () {
     return 'hsl(' + ((i * 47) % 360) + ',65%,50%)';
   }
 
+  // Colores del tema en caché: leerlos en cada fotograma es caro. Se vacía al cambiar el tema.
+  var cvCache = {};
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { cvCache = {}; });
+
   function cv(v) {
-    return getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+    return cvCache[v] || (cvCache[v] = getComputedStyle(document.documentElement).getPropertyValue(v).trim());
   }
 
   function trunc(s, n) {
@@ -99,8 +103,11 @@ var Core = (function () {
   }
 
   // Carga los iconos por adelantado para que no parpadeen al girar
+  var preloaded = {};
   function preload(champs) {
-    champs.forEach(function (c) { new Image().src = iconSrc(c); });
+    champs.forEach(function (c) {
+      if (!preloaded[c.id]) (preloaded[c.id] = new Image()).src = iconSrc(c);
+    });
   }
 
   // Muestra el resultado. Si se pasa el campeón, añade su icono y roles.
