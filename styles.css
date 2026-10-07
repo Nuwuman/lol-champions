@@ -88,9 +88,8 @@ p.sub {
 .tabs {
   display: flex;
   gap: 6px;
-  overflow-x: auto;
+  flex-wrap: wrap;
   margin-bottom: 12px;
-  padding-bottom: 4px;
 }
 
 .tab {
