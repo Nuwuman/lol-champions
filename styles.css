@@ -381,7 +381,7 @@ canvas.g {
 
 .lever {
   position: absolute;
-  right: 9px;
+  right: 14px;
   top: 70px;
   width: 10px;
   height: 74px;
@@ -740,4 +740,73 @@ canvas.g {
 .grid {
   scrollbar-width: thin;
   scrollbar-color: var(--line) transparent;
+}
+
+/* ---------- Blackjack ---------- */
+.jr {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  margin-bottom: 6px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.jr img {
+  width: 36px;
+  height: 36px;
+  flex: none;
+  border-radius: 8px;
+}
+
+.jn {
+  flex: 0 0 84px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.jc {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+}
+
+.jcard {
+  min-width: 26px;
+  height: 34px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 700;
+  font-size: .8rem;
+  color: #111;
+  background: #f0e6d2;
+  border: 1px solid #c8aa6e;
+  border-radius: 5px;
+  animation: pop .35s ease;
+}
+
+.jt {
+  flex: none;
+  min-width: 40px;
+  text-align: right;
+}
+
+.jr.bust {
+  opacity: .5;
+}
+
+.jr.bust .jt {
+  color: #be1e37;
+}
+
+.jr.win {
+  border-color: #c8aa6e;
+  box-shadow: 0 0 14px #c8aa6e;
 }

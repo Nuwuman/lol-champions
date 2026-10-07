@@ -48,12 +48,14 @@ Rutas de imagen: `Core.iconSrc(champ)` aplica `encodeURIComponent` (hay nombres 
 | s | Tragaperras | sin límite (con n>20 giros de duración fija) |
 | r | Carrera | 16 |
 | k | Cartas | 16 |
+| b | Batalla (esferas con icono; el 1.er rol define vida/daño/velocidad, tabla `STATS` en games.js) | 24 |
+| j | Blackjack (cada campeón juega su mano, pide hasta 17; gana el más cerca de 21) | 12 |
+
+Iconos: Carrete y Tragaperras los muestran con ≤24 campeones; la Ruleta con ≤16 (nombres hasta 36, luego nada).
 
 ## Pendiente / ideas
-- **Batalla** (esferas que pelean; idea: usar los roles de LoL como clases) y **Blackjack**: no están en esta versión; su código original está en la carpeta local `paginaDesicionesOG` (fuera del repo). Usarían `max` + `name` como los demás.
-- Íconos dentro de Carrete, Ruleta y Tragaperras (hoy solo texto).
 - Roles en español (el CSV los trae en inglés).
-- Filtros por **región** y por especie (darkin, yordle): los datos ya existen en `champions.csv`, `darkins.csv` y `yordles.csv`; habría que añadir `region` a `champions.json`.
+- Batalla y Blackjack se escribieron de cero (no se encontró `paginaDesicionesOG`); ajustar reglas/balance si hace falta.
 - Listas con nombre guardadas en `localStorage`, y selección compartible por enlace (`#jinx,teemo`): propuestas, no implementadas.
 
 ## Decisiones ya tomadas (no reabrir sin motivo)

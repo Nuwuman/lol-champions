@@ -40,6 +40,8 @@
       <button class="tab" data-v="s">🍒 Tragaperras</button>
       <button class="tab" data-v="r">🏁 Carrera</button>
       <button class="tab" data-v="k">🎴 Cartas</button>
+      <button class="tab" data-v="b">⚔️ Batalla</button>
+      <button class="tab" data-v="j">🃏 Blackjack</button>
     </div>
 
     <div class="card">
@@ -103,6 +105,24 @@
         </p>
         <div class="kbox" id="kbox"></div>
         <button class="go" id="k-go">Barajar</button>
+      </section>
+
+      <section id="s-b" hidden>
+        <p class="hint">
+          Los campeones chocan entre sí y se hacen daño según su rol
+          (los Vanguard aguantan, los Assassin pegan fuerte). El último en pie gana.
+        </p>
+        <canvas class="g" id="bc" width="340" height="400"></canvas>
+        <button class="go" id="b-go">¡A pelear!</button>
+      </section>
+
+      <section id="s-j" hidden>
+        <p class="hint">
+          Cada campeón juega su mano y pide carta hasta llegar a 17. Gana quien
+          más se acerque a 21 sin pasarse; si todos se pasan, el que menos se pasó.
+        </p>
+        <div id="jbox"></div>
+        <button class="go" id="j-go">Repartir</button>
       </section>
 
       <p class="warn" id="limit" hidden></p>

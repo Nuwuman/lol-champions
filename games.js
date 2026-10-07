@@ -1,5 +1,5 @@
 /* ============================================================
-   games.js — Registro de los juegos (Carrete, Ruleta, Plinko, Gachapón, Tragaperras, Carrera, Cartas)
+   games.js — Registro de los juegos (Carrete, Ruleta, Plinko, Gachapón, Tragaperras, Carrera, Cartas, Batalla, Blackjack)
    Depende de core.js (debe cargarse después)
    ============================================================ */
 
@@ -837,6 +837,261 @@
     };
 
     Core.registerGame('k', { name: 'El juego de Cartas', max: CMAX, preview: kInit });
+  })();
+
+  // ============================================================
+  // 8) BATALLA (esferas que chocan; el rol define vida, daño y velocidad)
+  // ============================================================
+  (function () {
+    var BW = 340, BH = 400;
+    var BMAX = 24;   // más esferas no caben en el ring
+    // rol -> [vida, daño por golpe, velocidad]
+    var STATS = {
+      Juggernaut: [140, 12, 1.0], Vanguard: [150, 9, .9], Warden: [150, 8, .9],
+      Burst: [80, 18, 1.1], Assassin: [75, 20, 1.4], Diver: [100, 14, 1.2],
+      Skirmisher: [100, 13, 1.2], Battlemage: [105, 12, 1.0], Specialist: [100, 12, 1.1],
+      Catcher: [100, 11, 1.1], Artillery: [80, 17, .9], Marksman: [85, 16, 1.0],
+      Enchanter: [90, 8, 1.0]
+    };
+    var imgs = {};
+    var ps = [];
+    var winner = -1;
+
+    function icon(c) {
+      var im = imgs[c.id];
+      if (!im) {
+        im = imgs[c.id] = new Image();
+        im.onload = function () { if (!S.busy) draw(); };
+        im.src = Core.iconSrc(c);
+      }
+      return im;
+    }
+
+    function setup() {
+      var n = S.champs.length;
+      var r = n > 12 ? 14 : 18;
+      winner = -1;
+      ps = S.champs.map(function (c, i) {
+        var st = STATS[c.roles[0]] || [100, 12, 1];
+        var a = Core.rnd() * 2 * Math.PI;
+        var sp = st[2] * 2.2;
+        return {
+          c: c, i: i, r: r, hp: st[0], max: st[0], atk: st[1], sp: sp,
+          x: r + Core.rnd() * (BW - 2 * r), y: r + Core.rnd() * (BH - 2 * r),
+          vx: Math.cos(a) * sp, vy: Math.sin(a) * sp
+        };
+      });
+    }
+
+    function draw() {
+      var c = $('bc').getContext('2d');
+      c.clearRect(0, 0, BW, BH);
+      c.strokeStyle = Core.cv('--line');
+      c.lineWidth = 2;
+      c.strokeRect(1, 1, BW - 2, BH - 2);
+      if (S.opts.length < 2 || S.opts.length > BMAX) return;
+
+      ps.forEach(function (p) {
+        if (p.hp <= 0) return;
+        var im = icon(p.c);
+
+        c.save();
+        c.beginPath();
+        c.arc(p.x, p.y, p.r, 0, 7);
+        c.clip();
+        if (im.complete && im.naturalWidth) c.drawImage(im, p.x - p.r, p.y - p.r, 2 * p.r, 2 * p.r);
+        else { c.fillStyle = Core.col(p.i); c.fill(); }
+        c.restore();
+
+        c.beginPath();
+        c.arc(p.x, p.y, p.r, 0, 7);
+        c.lineWidth = winner === p.i ? 4 : 2;
+        c.strokeStyle = winner === p.i ? '#ffd978' : Core.col(p.i);
+        c.stroke();
+
+        var w = p.r * 2, f = Math.max(0, p.hp / p.max);
+        c.fillStyle = 'rgba(0,0,0,.55)';
+        c.fillRect(p.x - p.r, p.y - p.r - 8, w, 4);
+        c.fillStyle = f > .5 ? '#0ac8b9' : f > .25 ? '#c8aa6e' : '#be1e37';
+        c.fillRect(p.x - p.r, p.y - p.r - 8, w * f, 4);
+      });
+    }
+
+    $('b-go').onclick = function () {
+      if (!Core.ok()) return;
+      Core.setBusy(true);
+      S.res.textContent = '';
+      setup();
+
+      var n = ps.length;
+      var last = {};          // "i-j" -> instante del último golpe del par
+      var t0 = performance.now();
+      var prev = t0;
+
+      (function f(now) {
+        var dt = Math.min((now - prev) / 16.67, 3);
+        var rage = 1 + Math.max(0, (now - t0 - 30000) / 10000);   // muerte súbita tras 30 s
+        var dead = [];
+        var i, j, a, b;
+        prev = now;
+
+        for (i = 0; i < n; i++) {
+          a = ps[i];
+          if (a.hp <= 0) continue;
+          a.x += a.vx * dt;
+          a.y += a.vy * dt;
+          if (a.x < a.r) { a.x = a.r; a.vx = Math.abs(a.vx); }
+          if (a.x > BW - a.r) { a.x = BW - a.r; a.vx = -Math.abs(a.vx); }
+          if (a.y < a.r) { a.y = a.r; a.vy = Math.abs(a.vy); }
+          if (a.y > BH - a.r) { a.y = BH - a.r; a.vy = -Math.abs(a.vy); }
+        }
+
+        for (i = 0; i < n; i++) {
+          for (j = i + 1; j < n; j++) {
+            a = ps[i]; b = ps[j];
+            if (a.hp <= 0 || b.hp <= 0) continue;
+            var dx = b.x - a.x, dy = b.y - a.y;
+            var d = Math.sqrt(dx * dx + dy * dy) || .01;
+            if (d >= a.r + b.r) continue;
+
+            var nx = dx / d, ny = dy / d;
+            var push = (a.r + b.r - d) / 2;
+            a.x -= nx * push; a.y -= ny * push;
+            b.x += nx * push; b.y += ny * push;
+
+            // rebote elástico (misma masa), conservando la velocidad propia de cada rol
+            var vn = (a.vx - b.vx) * nx + (a.vy - b.vy) * ny;
+            if (vn > 0) {
+              a.vx -= vn * nx; a.vy -= vn * ny;
+              b.vx += vn * nx; b.vy += vn * ny;
+              [a, b].forEach(function (p) {
+                var m = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
+                p.vx *= p.sp / m; p.vy *= p.sp / m;
+              });
+            }
+
+            var key = i + '-' + j;
+            if (now - (last[key] || -1e9) > 350) {
+              last[key] = now;
+              a.hp -= b.atk * rage;
+              b.hp -= a.atk * rage;
+              if (a.hp <= 0) dead.push(a.i);
+              if (b.hp <= 0) dead.push(b.i);
+            }
+          }
+        }
+
+        var alive = ps.filter(function (p) { return p.hp > 0; });
+        if (alive.length <= 1) {
+          winner = alive.length ? alive[0].i : dead[Core.randInt(dead.length)];
+          ps[winner].hp = Math.max(ps[winner].hp, 1);
+          draw();
+          Core.confetti();
+          Core.showRes(S.opts[winner], S.champs[winner]);
+          Core.setBusy(false);
+          return;
+        }
+        draw();
+        requestAnimationFrame(f);
+      })(t0);
+    };
+
+    Core.registerGame('b', {
+      name: 'La Batalla',
+      max: BMAX,
+      preview: function () { setup(); draw(); }
+    });
+  })();
+
+  // ============================================================
+  // 9) BLACKJACK (cada campeón juega su mano; gana el más cerca de 21)
+  // ============================================================
+  (function () {
+    var JMAX = 12;   // una fila por campeón
+    var RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    var rows = [];
+
+    function val(r) { return r === 'A' ? 11 : isNaN(r) ? 10 : +r; }
+
+    function total(h) {
+      var s = 0, aces = 0;
+      h.forEach(function (r) { s += val(r); if (r === 'A') aces++; });
+      while (s > 21 && aces-- > 0) s -= 10;
+      return s;
+    }
+
+    function jInit() {
+      var b = $('jbox');
+      b.innerHTML = '';
+      rows = [];
+      if (S.opts.length < 2 || S.opts.length > JMAX) return;
+
+      S.opts.forEach(function (o, i) {
+        var e = document.createElement('div');
+        var im = document.createElement('img');
+        var nm = document.createElement('span');
+        var cs = document.createElement('span');
+        var tt = document.createElement('b');
+
+        e.className = 'jr';
+        im.alt = '';
+        im.src = Core.iconSrc(S.champs[i]);
+        nm.className = 'jn';
+        nm.textContent = o;
+        cs.className = 'jc';
+        tt.className = 'jt';
+
+        [im, nm, cs, tt].forEach(function (x) { e.appendChild(x); });
+        b.appendChild(e);
+        rows.push({ el: e, cards: cs, tot: tt, hand: [] });
+      });
+    }
+
+    function deal(r, rank) {
+      var c = document.createElement('span');
+      c.className = 'jcard';
+      c.textContent = rank;
+      r.cards.appendChild(c);
+      r.hand.push(rank);
+      var t = total(r.hand);
+      r.tot.textContent = t > 21 ? t + ' 💥' : t;
+    }
+
+    $('j-go').onclick = function () {
+      if (!Core.ok()) return;
+      Core.setBusy(true);
+      S.res.textContent = '';
+      jInit();
+
+      (function round(k) {
+        var drew = false;
+        rows.forEach(function (r) {
+          if (k < 2 || total(r.hand) < 17) {
+            deal(r, RANKS[Core.randInt(RANKS.length)]);
+            drew = true;
+          }
+        });
+        if (drew) { setTimeout(function () { round(k + 1); }, 450); return; }
+
+        var tots = rows.map(function (r) { return total(r.hand); });
+        var ok = tots.filter(function (t) { return t <= 21; });
+        // si todos se pasan, gana el que menos se pasó
+        var best = ok.length ? Math.max.apply(null, ok) : Math.min.apply(null, tots);
+        var c2 = [];
+        tots.forEach(function (t, i) { if (t === best) c2.push(i); });
+        var w = c2[Core.randInt(c2.length)];
+
+        rows.forEach(function (r, i) {
+          r.el.classList.toggle('bust', tots[i] > 21);
+          r.el.classList.toggle('win', i === w);
+        });
+        Core.confetti();
+        Core.showRes(S.opts[w] + ' (' + tots[w] + ')', S.champs[w]);
+        Core.setBusy(false);
+      })(0);
+    };
+
+    Core.registerGame('j', { name: 'El Blackjack', max: JMAX, preview: jInit });
   })();
 
   // ============================================================
