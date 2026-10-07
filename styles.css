@@ -205,9 +205,32 @@ canvas.g {
   padding: 0 14px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   color: var(--muted);
   opacity: .55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cic {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: 8px;
+  border: 1px solid #c8aa6e;
+  object-fit: cover;
+}
+
+.line.mid .cic {
+  width: 42px;
+  height: 42px;
 }
 
 .line.mid {
@@ -297,7 +320,7 @@ canvas.g {
 .rw {
   flex: 1;
   min-width: 0;
-  height: 132px;
+  height: 176px;
   background: #fff;
   color: #111;
   border-radius: 8px;
@@ -310,20 +333,35 @@ canvas.g {
 }
 
 .rw div {
-  height: 44px;
-  line-height: 44px;
-  font-size: .78rem;
+  height: 56px;
+  font-size: .72rem;
   font-weight: 700;
   padding: 0 4px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.rw div span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rw .cic {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
 }
 
 .rw div:nth-child(2) {
   color: #111;
-  font-size: .9rem;
+  font-size: .8rem;
   border-top: 2px solid #c89b3c;
   border-bottom: 2px solid #c89b3c;
   background: #f0e6d2;

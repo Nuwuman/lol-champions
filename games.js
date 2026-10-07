@@ -17,12 +17,15 @@
   (function () {
     var L = [$('l0'), $('l1'), $('l2')];
     var reel = $('reel');
+    var ICONS_MAX = 24;   // por encima, solo nombres (sin iconos que parpadeen)
 
     function show(i) {
       var n = S.opts.length;
-      L[0].textContent = S.opts[(i - 1 + n) % n];
-      L[1].textContent = S.opts[i % n];
-      L[2].textContent = S.opts[(i + 1) % n];
+      var ic = n <= ICONS_MAX;
+      [-1, 0, 1].forEach(function (d, k) {
+        var j = (i + d + n) % n;
+        Core.label(L[k], S.opts[j], S.champs[j], ic);
+      });
       reel.classList.remove('tick');
       void reel.offsetWidth;
       reel.classList.add('tick');
@@ -66,8 +69,10 @@
     Core.registerGame('c', {
       preview: function () {
         reel.classList.remove('win');
-        if (S.opts.length >= 2) show(0);
-        else {
+        if (S.opts.length >= 2) {
+          if (S.opts.length <= ICONS_MAX) Core.preload(S.champs);
+          show(0);
+        } else {
           L[0].innerHTML = '&nbsp;';
           L[1].textContent = '¿QUIÉN SERÁ?';
           L[2].innerHTML = '&nbsp;';
@@ -82,11 +87,24 @@
   (function () {
     var wa = 0;
     var LABELS_MAX = 36;   // por encima, los nombres no caben en los sectores
+    var ICONS_MAX = 16;    // por encima, solo nombre (el icono ya no cabe)
+    var imgs = {};         // id -> Image (cache para el canvas)
+
+    function icon(c) {
+      var im = imgs[c.id];
+      if (!im) {
+        im = imgs[c.id] = new Image();
+        im.onload = function () { if (!S.busy) draw(wa); };
+        im.src = Core.iconSrc(c);
+      }
+      return im;
+    }
 
     function draw(a) {
       var c = $('wc').getContext('2d');
       var n = S.opts.length;
       var s = 2 * Math.PI / n;
+      var ic = n <= ICONS_MAX;
       c.clearRect(0, 0, 320, 320);
       if (n < 2) return;
 
@@ -101,10 +119,27 @@
           c.save();
           c.translate(160, 160);
           c.rotate(a + (i + .5) * s);
+          if (ic) {
+            var im = icon(S.champs[i]);
+            if (im.complete && im.naturalWidth) {
+              // icono redondo en el borde exterior del sector
+              c.save();
+              c.beginPath();
+              c.arc(122, 0, 17, 0, 7);
+              c.clip();
+              c.drawImage(im, 105, -17, 34, 34);
+              c.restore();
+              c.beginPath();
+              c.arc(122, 0, 17, 0, 7);
+              c.lineWidth = 2;
+              c.strokeStyle = '#c8aa6e';
+              c.stroke();
+            }
+          }
           c.fillStyle = '#fff';
           c.font = 'bold 13px system-ui';
           c.textAlign = 'right';
-          c.fillText(Core.trunc(S.opts[i], 13), 138, 5);
+          c.fillText(Core.trunc(S.opts[i], ic ? 10 : 13), ic ? 98 : 138, 5);
           c.restore();
         }
       }
@@ -515,19 +550,23 @@
   (function () {
     var RW = [0, 1, 2].map(function (i) { return $('r' + i); });
     var rp = [0, 0, 0];
+    var ICONS_MAX = 24;   // por encima, solo nombres (sin iconos que parpadeen)
 
     function showR(r, p) {
       var n = S.opts.length;
       var d = RW[r].children;
-      d[0].textContent = S.opts[(p - 1 + n) % n];
-      d[1].textContent = S.opts[p % n];
-      d[2].textContent = S.opts[(p + 1) % n];
+      var ic = n <= ICONS_MAX;
+      [-1, 0, 1].forEach(function (o, k) {
+        var j = (p + o + n) % n;
+        Core.label(d[k], S.opts[j], S.champs[j], ic);
+      });
       RW[r].classList.remove('tk');
       void RW[r].offsetWidth;
       RW[r].classList.add('tk');
     }
 
     function previewSlots() {
+      if (S.opts.length >= 2 && S.opts.length <= ICONS_MAX) Core.preload(S.champs);
       RW.forEach(function (e, r) {
         if (S.opts.length < 2) {
           [].forEach.call(e.children, function (c) { c.textContent = ''; });

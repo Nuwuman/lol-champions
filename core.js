@@ -83,6 +83,26 @@ var Core = (function () {
     return IMG_DIR + encodeURIComponent(c.icon);
   }
 
+  // Rellena un elemento con [icono] + nombre (el icono solo si icons es true)
+  function label(el, name, champ, icons) {
+    el.textContent = '';
+    if (icons && champ) {
+      var img = document.createElement('img');
+      img.className = 'cic';
+      img.alt = '';
+      img.src = iconSrc(champ);
+      el.appendChild(img);
+    }
+    var s = document.createElement('span');
+    s.textContent = name;
+    el.appendChild(s);
+  }
+
+  // Carga los iconos por adelantado para que no parpadeen al girar
+  function preload(champs) {
+    champs.forEach(function (c) { new Image().src = iconSrc(c); });
+  }
+
   // Muestra el resultado. Si se pasa el campeón, añade su icono y roles.
   function showRes(t, champ) {
     var res = state.res;
@@ -465,6 +485,8 @@ var Core = (function () {
     cv: cv,
     trunc: trunc,
     iconSrc: iconSrc,
+    label: label,
+    preload: preload,
 
     // flujo
     showRes: showRes,
