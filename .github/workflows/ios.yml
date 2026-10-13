@@ -1,0 +1,44 @@
+name: iOS ipa
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Copiar la web a www/
+        run: |
+          mkdir ios-app/www
+          cp index.html styles.css core.js games.js i18n.js ios-app/www/
+          cp -r data img ios-app/www/
+
+      - name: Generar proyecto iOS
+        working-directory: ios-app
+        run: |
+          npm install
+          npx cap add ios
+          npx cap sync ios
+
+      - name: Compilar sin firmar
+        working-directory: ios-app/ios/App
+        run: |
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Release \
+            -sdk iphoneos -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
+
+      - name: Empaquetar .ipa
+        working-directory: ios-app/ios/App
+        run: |
+          mkdir Payload
+          cp -r build/Build/Products/Release-iphoneos/App.app Payload/
+          zip -qr elige-tu-campeon.ipa Payload
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: elige-tu-campeon-ipa
+          path: ios-app/ios/App/elige-tu-campeon.ipa
