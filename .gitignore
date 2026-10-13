@@ -14,3 +14,4 @@ skills-lock.json
 ios-app/node_modules/
 ios-app/www/
 ios-app/ios/
+dist/
